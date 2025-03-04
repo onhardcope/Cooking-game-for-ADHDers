@@ -1,0 +1,965 @@
+[gd_scene load_steps=100 format=3 uid="uid://b4atebuo1fem1"]
+
+[ext_resource type="Script" path="res://Kitchen/kitchen.gd" id="1_e7fpt"]
+[ext_resource type="Texture2D" uid="uid://j7v2ynk5d2ho" path="res://Assets/Kitchen/Component Sprites/background.png" id="1_wao47"]
+[ext_resource type="Texture2D" uid="uid://gbbrgnfwn8r5" path="res://Assets/Kitchen/Component Sprites/fridge_0.png" id="2_4ikyh"]
+[ext_resource type="Texture2D" uid="uid://c66h4rw2ja3dp" path="res://Assets/Kitchen/Component Sprites/exhaust.png" id="2_vk336"]
+[ext_resource type="Texture2D" uid="uid://ctn2tmhbjjly8" path="res://Assets/Kitchen/Component Sprites/Cupboard/top_left_0.png" id="3_jwn7m"]
+[ext_resource type="Texture2D" uid="uid://bb44712c1tjro" path="res://Assets/Kitchen/Component Sprites/countertop.png" id="3_ypo7v"]
+[ext_resource type="Texture2D" uid="uid://0ada76hbynj8" path="res://Assets/Kitchen/Component Sprites/stove_top_0.png" id="4_1a3wk"]
+[ext_resource type="Texture2D" uid="uid://5mnc0v6prruv" path="res://Assets/Kitchen/Component Sprites/fridge_1.png" id="4_5dinu"]
+[ext_resource type="Texture2D" uid="uid://d0ordeyspt83a" path="res://Assets/Kitchen/Component Sprites/Cupboard/top_middle_0.png" id="4_t2m7h"]
+[ext_resource type="Texture2D" uid="uid://dtrarhrd4aiva" path="res://Assets/Kitchen/Component Sprites/Cupboard/top_right_0.png" id="5_m1nto"]
+[ext_resource type="Texture2D" uid="uid://dh738hguxan1x" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_left_0.png" id="6_c201u"]
+[ext_resource type="PackedScene" uid="uid://c6hhsppq0jrhb" path="res://ingredient_list_template.tscn" id="6_ingtu"]
+[ext_resource type="Texture2D" uid="uid://cnhasyfgvs8s3" path="res://Assets/Kitchen/Component Sprites/Cupboard/top_left_1.png" id="6_ua441"]
+[ext_resource type="Texture2D" uid="uid://d03qqq64m4ljp" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_right_0.png" id="7_a0idp"]
+[ext_resource type="Texture2D" uid="uid://c3a2kippqi2at" path="res://Assets/Kitchen/Ingredients/egg.png" id="7_ope4k"]
+[ext_resource type="Texture2D" uid="uid://dm56ee4uodfv4" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_bg.png" id="8_6fn2b"]
+[ext_resource type="Texture2D" uid="uid://c7epynr2j7k4q" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_3_0.png" id="9_a3ue4"]
+[ext_resource type="Texture2D" uid="uid://v0kho7001u0e" path="res://Assets/Kitchen/Ingredients/lemon.png" id="9_l7j6a"]
+[ext_resource type="Texture2D" uid="uid://bso2ljhnfxc07" path="res://Assets/Kitchen/Component Sprites/Cupboard/top_right_1.png" id="9_ngc60"]
+[ext_resource type="Texture2D" uid="uid://djdgnsew1hytl" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_3_1.png" id="10_b4xw6"]
+[ext_resource type="Texture2D" uid="uid://ncx2na5wa2so" path="res://Assets/Kitchen/Ingredients/onion.png" id="10_hrca6"]
+[ext_resource type="Texture2D" uid="uid://baa3y00furn6g" path="res://Assets/Kitchen/Ingredients/milk_bottle.png" id="10_i80d3"]
+[ext_resource type="Texture2D" uid="uid://brs6i40c3g8xs" path="res://Assets/Kitchen/Ingredients/tomato.png" id="11_nrw4i"]
+[ext_resource type="Texture2D" uid="uid://is3yix62kq35" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_left_1.png" id="11_sgnw8"]
+[ext_resource type="Texture2D" uid="uid://cwf02hdoepqy4" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_2_0.png" id="11_w47oo"]
+[ext_resource type="Texture2D" uid="uid://tjtipj7rc4tf" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_2_1.png" id="12_ueeg4"]
+[ext_resource type="Texture2D" uid="uid://l1v1ogyeoeo3" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_right_1.png" id="13_5r5ge"]
+[ext_resource type="Texture2D" uid="uid://btdminulx32ad" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_1_0.png" id="13_k6uhc"]
+[ext_resource type="Texture2D" uid="uid://dd2evowsfci0b" path="res://Assets/Kitchen/Component Sprites/Cupboard/bottom_middle_1_1.png" id="14_yhxht"]
+[ext_resource type="Texture2D" uid="uid://rej7grvmkq61" path="res://Assets/Kitchen/Utensils and Others/coffee_mug.png" id="15_0s8pk"]
+[ext_resource type="Texture2D" uid="uid://cvxnl87thc0oh" path="res://Assets/Kitchen/Utensils and Others/glass_cup.png" id="16_gtagk"]
+[ext_resource type="Texture2D" uid="uid://doyewk1nnxte2" path="res://Assets/Kitchen/Utensils and Others/plate.png" id="17_g5sm4"]
+[ext_resource type="Texture2D" uid="uid://p5h34agev3lv" path="res://Assets/Kitchen/Component Sprites/oven_0.png" id="18_otvpp"]
+[ext_resource type="Texture2D" uid="uid://bpkje381x7shp" path="res://Assets/Kitchen/Ingredients/pepper.png" id="19_y4781"]
+[ext_resource type="Texture2D" uid="uid://d38i8eed4gsyl" path="res://Assets/Kitchen/Ingredients/salt.png" id="20_ldois"]
+[ext_resource type="Texture2D" uid="uid://du21lpm4ntsvn" path="res://Assets/Kitchen/Ingredients/chilli.png" id="21_jtqrc"]
+[ext_resource type="Texture2D" uid="uid://bwmmldisjdt1h" path="res://Assets/Kitchen/Ingredients/turmeric_powder.png" id="21_snr2f"]
+[ext_resource type="Texture2D" uid="uid://dcbtvtlo11lp4" path="res://Assets/Kitchen/Ingredients/sugar.png" id="22_bevnh"]
+[ext_resource type="Texture2D" uid="uid://bl16f2bvhv8x5" path="res://Assets/Kitchen/Ingredients/coffee.png" id="25_8cqb8"]
+[ext_resource type="Texture2D" uid="uid://yfy3l8fm0111" path="res://Assets/Kitchen/Utensils and Others/boiling_pot.png" id="26_a2yq0"]
+[ext_resource type="Texture2D" uid="uid://c3srcfag5gk06" path="res://Assets/Kitchen/Utensils and Others/cooking_pot.png" id="27_35fhh"]
+[ext_resource type="Texture2D" uid="uid://cd3el4i6a7ney" path="res://Assets/Kitchen/recipe_book.png" id="27_v5nrd"]
+[ext_resource type="Texture2D" uid="uid://kuk6svgxv3yd" path="res://Assets/Kitchen/Utensils and Others/container.png" id="28_ohqfk"]
+[ext_resource type="Texture2D" uid="uid://j2e3om33udsl" path="res://Assets/Kitchen/Utensils and Others/spatula.png" id="30_igxic"]
+[ext_resource type="Texture2D" uid="uid://bpkmvsnyswgxs" path="res://Assets/Kitchen/Utensils and Others/small_knife.png" id="30_pdumr"]
+[ext_resource type="Texture2D" uid="uid://lshgv730t3ea" path="res://Assets/Kitchen/Utensils and Others/bowl.png" id="31_24ubp"]
+[ext_resource type="Texture2D" uid="uid://d0r4t5oj8wf53" path="res://Assets/Kitchen/Utensils and Others/big_knife.png" id="31_hmwtr"]
+[ext_resource type="Texture2D" uid="uid://dt3vfvkdw0w3h" path="res://Assets/Kitchen/Utensils and Others/big_bowl.png" id="32_ascas"]
+[ext_resource type="Texture2D" uid="uid://c0j4lpm8v0aaw" path="res://Assets/Kitchen/Utensils and Others/scissors.png" id="32_jxrgn"]
+[ext_resource type="Texture2D" uid="uid://dljkg2apjn0dk" path="res://Assets/Kitchen/Utensils and Others/rubber_band.png" id="33_o1r5t"]
+[ext_resource type="Texture2D" uid="uid://cu2e612ajvo3s" path="res://Assets/Kitchen/Utensils and Others/tablespoon.png" id="33_q0ayt"]
+[ext_resource type="Texture2D" uid="uid://b1fxct46dwok3" path="res://Assets/Kitchen/Utensils and Others/ladle.png" id="34_86hgt"]
+[ext_resource type="Texture2D" uid="uid://il210wan5bho" path="res://Assets/Kitchen/Utensils and Others/teaspoon.png" id="34_x3be2"]
+[ext_resource type="Texture2D" uid="uid://l006wpx7lwb4" path="res://Assets/Kitchen/Utensils and Others/fork.png" id="35_881wn"]
+[ext_resource type="Texture2D" uid="uid://mbyh43aeds16" path="res://Assets/Kitchen/Utensils and Others/foil.png" id="42_fpa12"]
+[ext_resource type="Texture2D" uid="uid://2mawc2383xxe" path="res://Assets/Kitchen/Utensils and Others/tape_roll.png" id="43_g2lml"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u2pr6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4ikyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5dinu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0v1a0"]
+size = Vector2(360, 785)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r04w6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jwn7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ua441")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gylo5"]
+size = Vector2(340, 250.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fdaal"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_m1nto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ngc60")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hd3t0"]
+size = Vector2(289, 253)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iq3ie"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_t2m7h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g20ty"]
+size = Vector2(287, 252)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2mwat"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_c201u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sgnw8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tebm"]
+size = Vector2(318, 367)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3n5o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_a0idp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5r5ge")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pr1bb"]
+size = Vector2(303, 373)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tlsot"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_a3ue4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_b4xw6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3i3yh"]
+size = Vector2(308.25, 122.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_83er4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_w47oo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ueeg4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpcxi"]
+size = Vector2(307.5, 125)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kslt5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_k6uhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yhxht")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a87x7"]
+size = Vector2(308.5, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s14l3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_1a3wk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cncco"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_otvpp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdpb0"]
+content_margin_left = 25.0
+content_margin_top = 18.0
+content_margin_right = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.0862745, 0.0862745, 0.0862745, 0.87451)
+border_width_left = 15
+border_width_top = 8
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.515097, 0.136039, 4.81308e-08, 1)
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2t3g"]
+bg_color = Color(0.160784, 0.160784, 0.160784, 0.980392)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 7
+border_color = Color(0.513726, 0.137255, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_5s0ey"]
+font_size = 45
+font_color = Color(0.76662, 0.76662, 0.76662, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdf44"]
+bg_color = Color(0.161157, 0.447465, 9.62615e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tj5fo"]
+bg_color = Color(0.123805, 0.355562, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rydpo"]
+bg_color = Color(0.161157, 0.447465, 9.62615e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4q1f6"]
+bg_color = Color(0.048284, 0.182154, 1.20327e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebuuh"]
+bg_color = Color(0, 0.403922, 0.588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpc5d"]
+bg_color = Color(1.05888e-06, 0.330832, 0.485791, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7s064"]
+bg_color = Color(0, 0.403922, 0.588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3wdd"]
+bg_color = Color(5.29438e-07, 0.26458, 0.392931, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xdkec"]
+font_size = 31
+font_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nfpq2"]
+font_size = 20
+font_color = Color(0.321728, 0.321728, 0.321728, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_l81m5"]
+font_size = 20
+font_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_doful"]
+font_size = 20
+font_color = Color(0.377919, 0.377919, 0.377919, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hos4"]
+bg_color = Color(0.624161, 0.260039, 2.88785e-07, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n5y2q"]
+bg_color = Color(0.486389, 0.195484, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ncrah"]
+bg_color = Color(0.486275, 0.196078, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qcoq2"]
+bg_color = Color(0.257884, 0.0895115, 1.20327e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmm67"]
+bg_color = Color(0.840046, 0.022143, 6.73831e-07, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_j6yr0"]
+font_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qibvn"]
+bg_color = Color(0.110805, 0.540659, 1.05888e-06, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_pfqtr"]
+font_size = 40
+
+[node name="Kitchen" type="Node2D"]
+script = ExtResource("1_e7fpt")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_wao47")
+centered = false
+
+[node name="Exhaust" type="Sprite2D" parent="."]
+texture = ExtResource("2_vk336")
+centered = false
+
+[node name="Fridge" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_u2pr6")
+centered = false
+
+[node name="FridgeArea" type="Area2D" parent="Fridge"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fridge/FridgeArea"]
+position = Vector2(1620, 565.5)
+shape = SubResource("RectangleShape2D_0v1a0")
+
+[node name="FridgeList" parent="Fridge" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 887.0
+offset_top = 310.0
+offset_right = 1383.0
+offset_bottom = 564.0
+tooltip_text = "Contains items preserved in the cold"
+item_count = 8
+item_0/icon = ExtResource("7_ope4k")
+item_1/icon = ExtResource("7_ope4k")
+item_2/text = "Chilli"
+item_2/icon = ExtResource("21_jtqrc")
+item_3/text = "Lemon"
+item_3/icon = ExtResource("9_l7j6a")
+item_4/text = "Milk bottle"
+item_4/icon = ExtResource("10_i80d3")
+item_5/text = "Tomato"
+item_5/icon = ExtResource("11_nrw4i")
+item_6/text = "Onion"
+item_7/text = "Onion"
+item_7/icon = ExtResource("10_hrca6")
+
+[node name="Cupboards" type="Node2D" parent="."]
+
+[node name="TopLeft" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_r04w6")
+centered = false
+
+[node name="TopLeftArea" type="Area2D" parent="Cupboards/TopLeft"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/TopLeft/TopLeftArea"]
+position = Vector2(271, 168.75)
+shape = SubResource("RectangleShape2D_gylo5")
+
+[node name="TopLeftList" parent="Cupboards/TopLeft" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 27.0
+offset_top = 310.0
+offset_right = 523.0
+offset_bottom = 564.0
+item_count = 8
+item_0/text = "Coffee mug"
+item_0/icon = ExtResource("15_0s8pk")
+item_1/text = "Coffee mug"
+item_1/icon = ExtResource("15_0s8pk")
+item_2/text = "Coffee mug"
+item_2/icon = ExtResource("15_0s8pk")
+item_3/text = "Coffee mug"
+item_3/icon = ExtResource("15_0s8pk")
+item_4/text = "Glass cup"
+item_4/icon = ExtResource("16_gtagk")
+item_5/text = "Glass cup"
+item_5/icon = ExtResource("16_gtagk")
+item_6/text = "Glass cup"
+item_6/icon = ExtResource("16_gtagk")
+item_7/text = "Glass cup"
+item_7/icon = ExtResource("16_gtagk")
+
+[node name="TopRight" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_fdaal")
+frame_progress = 0.345125
+centered = false
+
+[node name="TopRightArea" type="Area2D" parent="Cupboards/TopRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/TopRight/TopRightArea"]
+position = Vector2(1268.5, 168.5)
+shape = SubResource("RectangleShape2D_hd3t0")
+
+[node name="TopRightList" parent="Cupboards/TopRight" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 916.0
+offset_top = 310.0
+offset_right = 1412.0
+offset_bottom = 564.0
+item_count = 5
+item_0/text = "Plate"
+item_0/icon = ExtResource("17_g5sm4")
+item_1/text = "Plate"
+item_1/icon = ExtResource("17_g5sm4")
+item_2/text = "Plate"
+item_2/icon = ExtResource("17_g5sm4")
+item_3/text = "Plate"
+item_3/icon = ExtResource("17_g5sm4")
+item_4/text = "Plate"
+item_4/icon = ExtResource("17_g5sm4")
+
+[node name="TopMiddle" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_iq3ie")
+centered = false
+
+[node name="TopMiddleArea" type="Area2D" parent="Cupboards/TopMiddle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/TopMiddle/TopMiddleArea"]
+position = Vector2(964.5, 169)
+shape = SubResource("RectangleShape2D_g20ty")
+
+[node name="TopMiddleList" parent="Cupboards/TopMiddle" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 714.0
+offset_top = 310.0
+offset_right = 1210.0
+offset_bottom = 564.0
+item_count = 5
+item_0/text = "Pepper"
+item_0/icon = ExtResource("19_y4781")
+item_1/text = "Salt"
+item_1/icon = ExtResource("20_ldois")
+item_2/text = "Turmeric"
+item_2/icon = ExtResource("21_snr2f")
+item_3/text = "Sugar"
+item_3/icon = ExtResource("22_bevnh")
+item_4/text = "Coffee"
+item_4/icon = ExtResource("25_8cqb8")
+
+[node name="BottomLeft" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_2mwat")
+centered = false
+
+[node name="BottomLeftArea" type="Area2D" parent="Cupboards/BottomLeft"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/BottomLeft/BottomLeftArea"]
+position = Vector2(280, 777.5)
+shape = SubResource("RectangleShape2D_4tebm")
+
+[node name="BottomLeftList" parent="Cupboards/BottomLeft" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 27.0
+offset_top = 310.0
+offset_right = 540.0
+offset_bottom = 564.0
+item_0/text = "Boiling pot"
+item_0/icon = ExtResource("26_a2yq0")
+item_1/text = "Boiling pot"
+item_1/icon = ExtResource("26_a2yq0")
+item_2/text = "Cooking pot"
+item_2/icon = ExtResource("27_35fhh")
+item_3/text = "Cooking pot"
+item_3/icon = ExtResource("27_35fhh")
+item_4/text = "Container"
+item_4/icon = ExtResource("28_ohqfk")
+item_5/text = "Container"
+item_5/icon = ExtResource("28_ohqfk")
+item_6/text = "Container"
+item_6/icon = ExtResource("28_ohqfk")
+
+[node name="BottomRight" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_r3n5o")
+centered = false
+
+[node name="BottomRightArea" type="Area2D" parent="Cupboards/BottomRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/BottomRight/BottomRightArea"]
+position = Vector2(1271.5, 779.5)
+shape = SubResource("RectangleShape2D_pr1bb")
+
+[node name="BottomRightList" parent="Cupboards/BottomRight" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 916.0
+offset_top = 310.0
+offset_right = 1412.0
+offset_bottom = 564.0
+item_count = 6
+item_0/text = "Bowl"
+item_0/icon = ExtResource("31_24ubp")
+item_1/text = "Bowl"
+item_1/icon = ExtResource("31_24ubp")
+item_2/text = "Bowl"
+item_2/icon = ExtResource("31_24ubp")
+item_3/text = "Big bowl"
+item_3/icon = ExtResource("32_ascas")
+item_4/text = "Big bowl"
+item_4/icon = ExtResource("32_ascas")
+item_5/text = "Big bowl"
+item_5/icon = ExtResource("32_ascas")
+
+[node name="BottomMiddleBG" type="Sprite2D" parent="Cupboards"]
+texture = ExtResource("8_6fn2b")
+centered = false
+
+[node name="BottomMiddle3" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_tlsot")
+centered = false
+
+[node name="BottomMiddle3Area" type="Area2D" parent="Cupboards/BottomMiddle3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/BottomMiddle3/BottomMiddle3Area"]
+position = Vector2(962.125, 903.75)
+shape = SubResource("RectangleShape2D_3i3yh")
+
+[node name="BottomMiddle3List" parent="Cupboards/BottomMiddle3" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 714.0
+offset_top = 310.0
+offset_right = 1210.0
+offset_bottom = 564.0
+item_count = 3
+item_0/text = "Spatula"
+item_0/icon = ExtResource("30_igxic")
+item_1/text = "Ladle"
+item_1/icon = ExtResource("34_86hgt")
+item_2/text = "Ladle"
+item_2/icon = ExtResource("34_86hgt")
+
+[node name="BottomMiddle2" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_83er4")
+centered = false
+
+[node name="BottomMiddle2Area" type="Area2D" parent="Cupboards/BottomMiddle2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/BottomMiddle2/BottomMiddle2Area"]
+position = Vector2(962.5, 776.5)
+shape = SubResource("RectangleShape2D_wpcxi")
+
+[node name="BottomMiddle2List" parent="Cupboards/BottomMiddle2" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 714.0
+offset_top = 310.0
+offset_right = 1210.0
+offset_bottom = 564.0
+item_count = 8
+item_0/text = "Tablespoon"
+item_0/icon = ExtResource("33_q0ayt")
+item_1/text = "Tablespoon"
+item_1/icon = ExtResource("33_q0ayt")
+item_2/text = "Tablespoon"
+item_2/icon = ExtResource("33_q0ayt")
+item_3/text = "Teaspoon"
+item_3/icon = ExtResource("34_x3be2")
+item_4/text = "Teaspoon"
+item_4/icon = ExtResource("34_x3be2")
+item_5/text = "Teaspoon"
+item_5/icon = ExtResource("34_x3be2")
+item_6/text = "Fork"
+item_6/icon = ExtResource("35_881wn")
+item_7/text = "Fork"
+item_7/icon = ExtResource("35_881wn")
+
+[node name="BottomMiddle1" type="AnimatedSprite2D" parent="Cupboards"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_kslt5")
+frame_progress = 0.115079
+centered = false
+
+[node name="BottomMiddle1Area" type="Area2D" parent="Cupboards/BottomMiddle1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cupboards/BottomMiddle1/BottomMiddle1Area"]
+position = Vector2(961.75, 651)
+shape = SubResource("RectangleShape2D_a87x7")
+
+[node name="BottomMiddle1List" parent="Cupboards/BottomMiddle1" instance=ExtResource("6_ingtu")]
+visible = false
+offset_left = 714.0
+offset_top = 310.0
+offset_right = 1210.0
+offset_bottom = 564.0
+item_count = 6
+item_0/text = "Small knife"
+item_0/icon = ExtResource("30_pdumr")
+item_1/text = "Big knife"
+item_1/icon = ExtResource("31_hmwtr")
+item_2/text = "Scissors"
+item_2/icon = ExtResource("32_jxrgn")
+item_3/text = "Elasticband"
+item_3/icon = ExtResource("33_o1r5t")
+item_4/text = "Foil wrap"
+item_4/icon = ExtResource("42_fpa12")
+item_5/text = "Tape roll"
+item_5/icon = ExtResource("43_g2lml")
+
+[node name="Countertop" type="Sprite2D" parent="."]
+texture = ExtResource("3_ypo7v")
+centered = false
+
+[node name="StoveTop" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_s14l3")
+centered = false
+
+[node name="Oven" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cncco")
+centered = false
+
+[node name="SelectionList" type="ItemList" parent="."]
+unique_name_in_owner = true
+visible = false
+clip_contents = false
+offset_top = 680.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_colors/guide_color = Color(0.328503, 0.0746415, 2.40654e-08, 1)
+theme_override_constants/v_separation = 14
+theme_override_font_sizes/font_size = 46
+theme_override_styles/panel = SubResource("StyleBoxFlat_fdpb0")
+auto_height = true
+max_columns = 5
+fixed_column_width = 368
+icon_scale = 0.7
+
+[node name="Header" type="Label" parent="SelectionList"]
+layout_mode = 1
+anchors_preset = -1
+offset_top = -76.0
+offset_right = 1920.0
+offset_bottom = 9.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_t2t3g")
+text = "S E L E C T E D  I T E M S"
+label_settings = SubResource("LabelSettings_5s0ey")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShowSelectionListButton" type="Button" parent="."]
+offset_left = 1432.0
+offset_top = 42.0
+offset_right = 1643.0
+offset_bottom = 159.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vdf44")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tj5fo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rydpo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4q1f6")
+toggle_mode = true
+action_mode = 0
+text = "SHOW SELECTED INGREDIENTS"
+autowrap_mode = 2
+
+[node name="ShowRecipeButton" type="Button" parent="."]
+offset_left = 1664.0
+offset_top = 42.0
+offset_right = 1789.0
+offset_bottom = 159.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ebuuh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dpc5d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7s064")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p3wdd")
+toggle_mode = true
+action_mode = 0
+text = "CHECK RECIPE BOOK"
+autowrap_mode = 2
+
+[node name="RecipeBookSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 2
+scale = Vector2(1.05208, 1.05263)
+texture = ExtResource("27_v5nrd")
+centered = false
+
+[node name="HeaderLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 577.903
+offset_top = 294.5
+offset_right = 859.903
+offset_bottom = 338.5
+rotation = 0.0361464
+text = "COFFEE TIME!"
+label_settings = SubResource("LabelSettings_xdkec")
+
+[node name="IngredientsLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 578.0
+offset_top = 369.0
+offset_right = 885.0
+offset_bottom = 521.0
+rotation = 0.0238694
+text = "INGREDIENTS:
+1. Instant coffee powder (1tbsp)
+2. Sugar (1tbsp)
+3. Water (1/2tbsp) 
+4. Milk (1cup or 1/2 bottle)"
+label_settings = SubResource("LabelSettings_nfpq2")
+autowrap_mode = 2
+
+[node name="ExtraLabel" type="Label" parent="RecipeBookSprite"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UtensilsLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 576.951
+offset_top = 618.45
+offset_right = 778.951
+offset_bottom = 739.45
+rotation = 0.0211369
+text = "UTENSILS REQUIRED:
+1. Coffee mug
+2. Boiling pot
+3. Tablespoon
+4. Cup (optional)"
+label_settings = SubResource("LabelSettings_l81m5")
+
+[node name="ProcedureLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 918.178
+offset_top = 342.95
+offset_right = 1232.18
+offset_bottom = 835.95
+rotation = -0.00601494
+text = "PROCEDURE:
+1. Measure using Tablespoon:
+- 1tbsp Instant coffee powder, 
+- 1tbsp Sugar and 
+- 1/2tbsp Water 
+and put them into a Coffee mug.
+2. Mix thoroughly using Tablespoon.
+3. Pour 1cup of milk into a Boiling pot.
+4. Heat the Boiling pot on the stove for 2.5min, till the Milk boils.
+5. Pour the Milk into the Coffee mug carefully and mix thoroughly."
+label_settings = SubResource("LabelSettings_doful")
+autowrap_mode = 2
+
+[node name="CheckSelectionButton" type="Button" parent="."]
+offset_left = 528.0
+offset_top = 375.0
+offset_right = 730.0
+offset_bottom = 461.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_5hos4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n5y2q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ncrah")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qcoq2")
+action_mode = 0
+text = "PROCEED TO COOKING PHASE"
+autowrap_mode = 2
+
+[node name="ErrorLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = 189.0
+offset_top = 350.0
+offset_right = 1070.0
+offset_bottom = 493.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_gmm67")
+label_settings = SubResource("LabelSettings_j6yr0")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ProceedLabel" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+offset_left = 257.0
+offset_top = 350.0
+offset_right = 1000.0
+offset_bottom = 483.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qibvn")
+text = "ALL SELECTED ITEMS CORRECT! "
+label_settings = SubResource("LabelSettings_pfqtr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="input_event" from="Fridge/FridgeArea" to="." method="_on_component_input_event" binds= [0]]
+[connection signal="item_selected" from="Fridge/FridgeList" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/TopLeft/TopLeftArea" to="." method="_on_component_input_event" binds= [1]]
+[connection signal="item_selected" from="Cupboards/TopLeft/TopLeftList" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/TopRight/TopRightArea" to="." method="_on_component_input_event" binds= [2]]
+[connection signal="item_selected" from="Cupboards/TopRight/TopRightList" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/TopMiddle/TopMiddleArea" to="." method="_on_component_input_event" binds= [3]]
+[connection signal="item_selected" from="Cupboards/TopMiddle/TopMiddleList" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/BottomLeft/BottomLeftArea" to="." method="_on_component_input_event" binds= [4]]
+[connection signal="item_selected" from="Cupboards/BottomLeft/BottomLeftList" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/BottomRight/BottomRightArea" to="." method="_on_component_input_event" binds= [5]]
+[connection signal="item_selected" from="Cupboards/BottomRight/BottomRightList" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/BottomMiddle3/BottomMiddle3Area" to="." method="_on_component_input_event" binds= [6]]
+[connection signal="item_selected" from="Cupboards/BottomMiddle3/BottomMiddle3List" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/BottomMiddle2/BottomMiddle2Area" to="." method="_on_component_input_event" binds= [7]]
+[connection signal="item_selected" from="Cupboards/BottomMiddle2/BottomMiddle2List" to="." method="_on_component_list_item_selected"]
+[connection signal="input_event" from="Cupboards/BottomMiddle1/BottomMiddle1Area" to="." method="_on_component_input_event" binds= [8]]
+[connection signal="item_selected" from="Cupboards/BottomMiddle1/BottomMiddle1List" to="." method="_on_component_list_item_selected"]
+[connection signal="item_clicked" from="SelectionList" to="." method="_on_selection_list_item_clicked"]
+[connection signal="toggled" from="ShowSelectionListButton" to="." method="_on_show_selection_list_button_toggled"]
+[connection signal="toggled" from="ShowRecipeButton" to="." method="_on_show_recipe_button_toggled"]
+[connection signal="pressed" from="CheckSelectionButton" to="." method="_on_check_selection_button_pressed"]

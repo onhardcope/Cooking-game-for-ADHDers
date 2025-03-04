@@ -1,2 +1,2 @@
-# Cooking-game-for-ADHDers
- B.Tech CSE final year project
+# adhd-cooking-game
+cooking game for neurodivergent people

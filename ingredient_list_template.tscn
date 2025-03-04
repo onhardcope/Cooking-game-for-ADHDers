@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6hhsppq0jrhb"]
+
+[ext_resource type="Texture2D" uid="uid://ncx2na5wa2so" path="res://Assets/Kitchen/Ingredients/onion.png" id="1_esou6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_254o6"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.08469, 0.0846899, 0.0846899, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.34988, 0.0866178, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 20
+
+[node name="IngredientListTemplate" type="ItemList"]
+z_index = 1
+offset_right = 497.0
+offset_bottom = 254.0
+mouse_default_cursor_shape = 2
+theme_override_colors/guide_color = Color(0.327066, 0.050465, 0, 1)
+theme_override_font_sizes/font_size = 28
+theme_override_styles/panel = SubResource("StyleBoxFlat_254o6")
+allow_search = false
+auto_height = true
+item_count = 7
+max_columns = 2
+fixed_column_width = 225
+icon_scale = 0.35
+item_0/text = "Egg"
+item_0/icon = ExtResource("1_esou6")
+item_1/text = "Egg"
+item_1/icon = ExtResource("1_esou6")
+item_2/text = "Capsicum"
+item_2/icon = ExtResource("1_esou6")
+item_3/text = "Tomato"
+item_3/icon = ExtResource("1_esou6")
+item_4/text = "Onion"
+item_4/icon = ExtResource("1_esou6")
+item_5/text = "Capsicum"
+item_5/icon = ExtResource("1_esou6")
+item_6/text = "Lemon"
+item_6/icon = ExtResource("1_esou6")

@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=3 uid="uid://b327k5lwki7lq"]
+
+[ext_resource type="Texture2D" uid="uid://gmpofcrtpnyh" path="res://Assets/Kitchen/Ingredients/egg_temp.png" id="1_oghhn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdpb0"]
+content_margin_left = 25.0
+content_margin_top = 18.0
+content_margin_right = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.08469, 0.0846899, 0.0846899, 1)
+border_width_left = 15
+border_width_top = 8
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.515097, 0.136039, 4.81308e-08, 1)
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2t3g"]
+bg_color = Color(0.162066, 0.162066, 0.162066, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 7
+border_color = Color(0.513726, 0.137255, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_5s0ey"]
+font_size = 45
+font_color = Color(0.76662, 0.76662, 0.76662, 1)
+
+[node name="SelectionList" type="ItemList"]
+clip_contents = false
+offset_top = 680.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_colors/guide_color = Color(0.328503, 0.0746415, 2.40654e-08, 1)
+theme_override_constants/v_separation = 14
+theme_override_font_sizes/font_size = 46
+theme_override_styles/panel = SubResource("StyleBoxFlat_fdpb0")
+auto_height = true
+item_count = 15
+max_columns = 5
+fixed_column_width = 368
+icon_scale = 0.7
+item_0/text = "Capsicum"
+item_0/icon = ExtResource("1_oghhn")
+item_1/text = "Capsicum"
+item_1/icon = ExtResource("1_oghhn")
+item_2/text = "Capsicum"
+item_2/icon = ExtResource("1_oghhn")
+item_3/text = "Capsicum"
+item_3/icon = ExtResource("1_oghhn")
+item_4/text = "Capsicum"
+item_4/icon = ExtResource("1_oghhn")
+item_5/text = "Capsicum"
+item_5/icon = ExtResource("1_oghhn")
+item_6/text = "Capsicum"
+item_6/icon = ExtResource("1_oghhn")
+item_7/text = "Capsicum"
+item_7/icon = ExtResource("1_oghhn")
+item_8/text = "Capsicum"
+item_8/icon = ExtResource("1_oghhn")
+item_9/text = "Capsicum"
+item_9/icon = ExtResource("1_oghhn")
+item_10/text = "Capsicum"
+item_10/icon = ExtResource("1_oghhn")
+item_11/text = "Capsicum"
+item_11/icon = ExtResource("1_oghhn")
+item_12/text = "Capsicum"
+item_12/icon = ExtResource("1_oghhn")
+item_13/text = "Capsicum"
+item_13/icon = ExtResource("1_oghhn")
+item_14/text = "Capsicum"
+item_14/icon = ExtResource("1_oghhn")
+
+[node name="Header" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_top = -76.0
+offset_right = 1920.0
+offset_bottom = 9.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_t2t3g")
+text = "S E L E C T E D  I T E M S"
+label_settings = SubResource("LabelSettings_5s0ey")
+horizontal_alignment = 1
+vertical_alignment = 1

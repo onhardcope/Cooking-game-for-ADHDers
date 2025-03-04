@@ -1,0 +1,4 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+.\Assets\Kitchen\Utensils and Others\added recipe list and selection list checking to proceed to cooking (BEFORE BUG FIX).mp4

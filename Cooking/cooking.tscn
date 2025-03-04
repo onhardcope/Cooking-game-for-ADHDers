@@ -1,0 +1,426 @@
+[gd_scene load_steps=32 format=3 uid="uid://4ygdmetx7b3i"]
+
+[ext_resource type="Texture2D" uid="uid://ccciagdob5wyw" path="res://Assets/Cooking/kitchen_scene_without_stove.png" id="1_8eutt"]
+[ext_resource type="Script" path="res://Cooking/cooking.gd" id="1_ctknw"]
+[ext_resource type="Texture2D" uid="uid://c66h4rw2ja3dp" path="res://Assets/Kitchen/Component Sprites/exhaust.png" id="2_agng2"]
+[ext_resource type="Texture2D" uid="uid://0ada76hbynj8" path="res://Assets/Kitchen/Component Sprites/stove_top_0.png" id="22_26ja0"]
+[ext_resource type="Texture2D" uid="uid://p5h34agev3lv" path="res://Assets/Kitchen/Component Sprites/oven_0.png" id="23_4xjn5"]
+[ext_resource type="Texture2D" uid="uid://cd3el4i6a7ney" path="res://Assets/Kitchen/recipe_book.png" id="24_w5wi7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0wywg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8eutt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bmosc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_26ja0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_38ky6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_4xjn5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_108xm"]
+content_margin_left = 25.0
+content_margin_top = 18.0
+content_margin_right = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.0862745, 0.0862745, 0.0862745, 0.87451)
+border_width_left = 15
+border_width_top = 8
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.515097, 0.136039, 4.81308e-08, 1)
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7k6aq"]
+bg_color = Color(0.160784, 0.160784, 0.160784, 0.980392)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 7
+border_color = Color(0.513726, 0.137255, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_6vjk6"]
+font_size = 45
+font_color = Color(0.76662, 0.76662, 0.76662, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4x62h"]
+bg_color = Color(0.161157, 0.447465, 9.62615e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dkism"]
+bg_color = Color(0.123805, 0.355562, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y1y47"]
+bg_color = Color(0.161157, 0.447465, 9.62615e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_76hx6"]
+bg_color = Color(0.048284, 0.182154, 1.20327e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6a0on"]
+bg_color = Color(0, 0.403922, 0.588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdkvh"]
+bg_color = Color(1.05888e-06, 0.330832, 0.485791, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa3gu"]
+bg_color = Color(0, 0.403922, 0.588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ke5u"]
+bg_color = Color(5.29438e-07, 0.26458, 0.392931, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rypp5"]
+font_size = 31
+font_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wc58i"]
+font_size = 20
+font_color = Color(0.321728, 0.321728, 0.321728, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xu075"]
+font_size = 20
+font_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1lc3c"]
+font_size = 20
+font_color = Color(0.377919, 0.377919, 0.377919, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nvhmj"]
+bg_color = Color(0.840046, 0.022143, 6.73831e-07, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_701y1"]
+font_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqg6h"]
+bg_color = Color(0.110805, 0.540659, 1.05888e-06, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_b30d6"]
+font_size = 40
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2l8uc"]
+size = Vector2(242, 226)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi0y5"]
+size = Vector2(296.75, 239)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6thg"]
+size = Vector2(196, 174)
+
+[node name="Cooking" type="Node2D"]
+script = ExtResource("1_ctknw")
+
+[node name="KitchenBG" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0wywg")
+centered = false
+
+[node name="Exhaust" type="Sprite2D" parent="."]
+texture = ExtResource("2_agng2")
+centered = false
+
+[node name="StoveTop" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bmosc")
+centered = false
+
+[node name="Oven" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_38ky6")
+centered = false
+
+[node name="SelectionList" type="ItemList" parent="."]
+visible = false
+clip_contents = false
+offset_top = 680.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_colors/guide_color = Color(0.328503, 0.0746415, 2.40654e-08, 1)
+theme_override_constants/v_separation = 14
+theme_override_font_sizes/font_size = 46
+theme_override_styles/panel = SubResource("StyleBoxFlat_108xm")
+auto_height = true
+max_columns = 5
+fixed_column_width = 368
+icon_scale = 0.7
+
+[node name="Header" type="Label" parent="SelectionList"]
+layout_mode = 1
+anchors_preset = -1
+offset_top = -76.0
+offset_right = 1920.0
+offset_bottom = 9.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7k6aq")
+text = "S E L E C T E D  I T E M S"
+label_settings = SubResource("LabelSettings_6vjk6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShowSelectionListButton" type="Button" parent="."]
+visible = false
+offset_left = 1432.0
+offset_top = 42.0
+offset_right = 1643.0
+offset_bottom = 159.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_4x62h")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dkism")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y1y47")
+theme_override_styles/normal = SubResource("StyleBoxFlat_76hx6")
+toggle_mode = true
+action_mode = 0
+text = "SHOW SELECTED INGREDIENTS"
+autowrap_mode = 2
+
+[node name="ShowRecipeButton" type="Button" parent="."]
+offset_left = 1664.0
+offset_top = 42.0
+offset_right = 1789.0
+offset_bottom = 159.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_6a0on")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vdkvh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oa3gu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0ke5u")
+toggle_mode = true
+action_mode = 0
+text = "CHECK RECIPE BOOK"
+autowrap_mode = 2
+
+[node name="RecipeBookSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 2
+scale = Vector2(1.05208, 1.05263)
+texture = ExtResource("24_w5wi7")
+centered = false
+
+[node name="HeaderLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 577.903
+offset_top = 294.5
+offset_right = 859.903
+offset_bottom = 338.5
+rotation = 0.0361464
+text = "COFFEE TIME!"
+label_settings = SubResource("LabelSettings_rypp5")
+
+[node name="IngredientsLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 578.0
+offset_top = 369.0
+offset_right = 885.0
+offset_bottom = 521.0
+rotation = 0.0238694
+text = "INGREDIENTS:
+1. Instant coffee powder (1tbsp)
+2. Sugar (1tbsp)
+3. Water (1/2tbsp) 
+4. Milk (1cup or 1/2 bottle)"
+label_settings = SubResource("LabelSettings_wc58i")
+autowrap_mode = 2
+
+[node name="ExtraLabel" type="Label" parent="RecipeBookSprite"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UtensilsLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 576.951
+offset_top = 618.45
+offset_right = 778.951
+offset_bottom = 739.45
+rotation = 0.0211369
+text = "UTENSILS REQUIRED:
+1. Coffee mug
+2. Boiling pot
+3. Tablespoon
+4. Cup (optional)"
+label_settings = SubResource("LabelSettings_xu075")
+
+[node name="ProcedureLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 918.178
+offset_top = 342.95
+offset_right = 1232.18
+offset_bottom = 835.95
+rotation = -0.00601494
+text = "PROCEDURE:
+1. Measure using Tablespoon:
+- 1tbsp Instant coffee powder, 
+- 1tbsp Sugar and 
+- 1/2tbsp Water 
+and put them into a Coffee mug.
+2. Mix thoroughly using Tablespoon.
+3. Pour 1cup of milk into a Boiling pot.
+4. Heat the Boiling pot on the stove for 2.5min, till the Milk boils.
+5. Pour the Milk into the Coffee mug carefully and mix thoroughly."
+label_settings = SubResource("LabelSettings_1lc3c")
+autowrap_mode = 2
+
+[node name="ErrorLabel" type="Label" parent="."]
+visible = false
+offset_left = 189.0
+offset_top = 350.0
+offset_right = 1070.0
+offset_bottom = 493.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nvhmj")
+label_settings = SubResource("LabelSettings_701y1")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ProceedLabel" type="Label" parent="."]
+visible = false
+offset_left = 257.0
+offset_top = 350.0
+offset_right = 1000.0
+offset_bottom = 483.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_oqg6h")
+text = "ALL SELECTED ITEMS CORRECT! "
+label_settings = SubResource("LabelSettings_b30d6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CountertopMouseDetectArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CountertopMouseDetectArea"]
+position = Vector2(957, 496)
+shape = SubResource("RectangleShape2D_2l8uc")
+
+[node name="StoveMouseDetectArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveMouseDetectArea"]
+position = Vector2(624.375, 525.5)
+shape = SubResource("RectangleShape2D_mi0y5")
+
+[node name="SinkMouseDetectArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SinkMouseDetectArea"]
+position = Vector2(1228, 510)
+shape = SubResource("RectangleShape2D_t6thg")
+
+[connection signal="toggled" from="ShowRecipeButton" to="." method="_on_show_recipe_button_toggled"]
+[connection signal="mouse_entered" from="CountertopMouseDetectArea" to="." method="_on_countertop_mouse_detect_area_entered"]
+[connection signal="mouse_exited" from="CountertopMouseDetectArea" to="." method="_on_countertop_mouse_detect_area_exited"]
+[connection signal="mouse_entered" from="StoveMouseDetectArea" to="." method="_on_stove_mouse_detect_area_entered"]
+[connection signal="mouse_exited" from="StoveMouseDetectArea" to="." method="_on_stove_mouse_detect_area_exited"]
+[connection signal="mouse_entered" from="SinkMouseDetectArea" to="." method="_on_sink_mouse_detect_area_entered"]
+[connection signal="mouse_exited" from="SinkMouseDetectArea" to="." method="_on_sink_mouse_detect_area_exited"]
