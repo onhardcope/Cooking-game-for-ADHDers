@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2mm2l1mjhyog"
-path="res://.godot/imported/kitchen_scene_merged.png-89e57a7edea890fb83496fc06e7a87ee.ctex"
+uid="uid://dnhlkmhfkvwul"
+path="res://.godot/imported/countertop_for_highlighting.png-2ddcb72685eb1c55ad6b27ab7f999576.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cooking/kitchen_scene_merged.png"
-dest_files=["res://.godot/imported/kitchen_scene_merged.png-89e57a7edea890fb83496fc06e7a87ee.ctex"]
+source_file="res://Assets/Cooking/countertop_for_highlighting.png"
+dest_files=["res://.godot/imported/countertop_for_highlighting.png-2ddcb72685eb1c55ad6b27ab7f999576.ctex"]
 
 [params]
 

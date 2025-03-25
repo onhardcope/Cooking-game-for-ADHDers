@@ -1,8 +1,11 @@
-[gd_scene load_steps=32 format=3 uid="uid://4ygdmetx7b3i"]
+[gd_scene load_steps=40 format=3 uid="uid://4ygdmetx7b3i"]
 
-[ext_resource type="Texture2D" uid="uid://ccciagdob5wyw" path="res://Assets/Cooking/kitchen_scene_without_stove.png" id="1_8eutt"]
-[ext_resource type="Script" path="res://Cooking/cooking.gd" id="1_ctknw"]
+[ext_resource type="Script" uid="uid://bnliuiyfpn8q" path="res://Cooking/cooking.gd" id="1_ctknw"]
+[ext_resource type="Texture2D" uid="uid://bay734piekkk" path="res://Assets/Cooking/kitchen_scene_without_stove_and_sink.png" id="2_43ubt"]
 [ext_resource type="Texture2D" uid="uid://c66h4rw2ja3dp" path="res://Assets/Kitchen/Component Sprites/exhaust.png" id="2_agng2"]
+[ext_resource type="Shader" uid="uid://bwpxoqllf8xeh" path="res://Kitchen/highlight_outline.gdshader" id="4_ktp5k"]
+[ext_resource type="Texture2D" uid="uid://dnhlkmhfkvwul" path="res://Assets/Cooking/countertop_for_highlighting.png" id="7_d0yh2"]
+[ext_resource type="Texture2D" uid="uid://d0x7wpkl2y3rw" path="res://Assets/Cooking/sink.png" id="8_ka8wj"]
 [ext_resource type="Texture2D" uid="uid://0ada76hbynj8" path="res://Assets/Kitchen/Component Sprites/stove_top_0.png" id="22_26ja0"]
 [ext_resource type="Texture2D" uid="uid://p5h34agev3lv" path="res://Assets/Kitchen/Component Sprites/oven_0.png" id="23_4xjn5"]
 [ext_resource type="Texture2D" uid="uid://cd3el4i6a7ney" path="res://Assets/Kitchen/recipe_book.png" id="24_w5wi7"]
@@ -11,18 +14,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_8eutt")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_bmosc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("22_26ja0")
+"texture": ExtResource("2_43ubt")
 }],
 "loop": true,
 "name": &"default",
@@ -39,6 +31,72 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_43ubt"]
+shader = ExtResource("4_ktp5k")
+shader_parameter/color = Color(0.987513, 0.725215, 7.70092e-07, 1)
+shader_parameter/width = 7.5
+shader_parameter/pattern = 0
+shader_parameter/inside = true
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bmosc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_26ja0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi0y5"]
+size = Vector2(296.75, 239)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d0yh2"]
+shader = ExtResource("4_ktp5k")
+shader_parameter/color = Color(0.987513, 0.725215, 7.70092e-07, 1)
+shader_parameter/width = 7.5
+shader_parameter/pattern = 0
+shader_parameter/inside = true
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yeshq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_d0yh2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2l8uc"]
+size = Vector2(278, 193)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ejuwu"]
+shader = ExtResource("4_ktp5k")
+shader_parameter/color = Color(0.987513, 0.725215, 7.70092e-07, 1)
+shader_parameter/width = 6.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_11pr1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ka8wj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6thg"]
+size = Vector2(220, 201)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_108xm"]
 content_margin_left = 25.0
@@ -220,15 +278,6 @@ shadow_offset = Vector2(-3, 3)
 [sub_resource type="LabelSettings" id="LabelSettings_b30d6"]
 font_size = 40
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2l8uc"]
-size = Vector2(242, 226)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi0y5"]
-size = Vector2(296.75, 239)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6thg"]
-size = Vector2(196, 174)
-
 [node name="Cooking" type="Node2D"]
 script = ExtResource("1_ctknw")
 
@@ -240,13 +289,45 @@ centered = false
 texture = ExtResource("2_agng2")
 centered = false
 
-[node name="StoveTop" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_bmosc")
-centered = false
-
 [node name="Oven" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_38ky6")
 centered = false
+
+[node name="StoveTop" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_43ubt")
+sprite_frames = SubResource("SpriteFrames_bmosc")
+centered = false
+
+[node name="StoveMouseDetectArea" type="Area2D" parent="StoveTop"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveTop/StoveMouseDetectArea"]
+position = Vector2(624.375, 525.5)
+shape = SubResource("RectangleShape2D_mi0y5")
+
+[node name="Countertop" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_d0yh2")
+sprite_frames = SubResource("SpriteFrames_yeshq")
+centered = false
+
+[node name="CountertopMouseDetectArea" type="Area2D" parent="Countertop"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Countertop/CountertopMouseDetectArea"]
+position = Vector2(957, 509.5)
+shape = SubResource("RectangleShape2D_2l8uc")
+
+[node name="Sink" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_ejuwu")
+sprite_frames = SubResource("SpriteFrames_11pr1")
+centered = false
+
+[node name="SinkMouseDetectArea" type="Area2D" parent="Sink"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sink/SinkMouseDetectArea"]
+position = Vector2(1243, 496.5)
+shape = SubResource("RectangleShape2D_t6thg")
 
 [node name="SelectionList" type="ItemList" parent="."]
 visible = false
@@ -352,8 +433,7 @@ rotation = 0.0211369
 text = "UTENSILS REQUIRED:
 1. Coffee mug
 2. Boiling pot
-3. Tablespoon
-4. Cup (optional)"
+3. Tablespoon"
 label_settings = SubResource("LabelSettings_xu075")
 
 [node name="ProcedureLabel" type="Label" parent="RecipeBookSprite"]
@@ -369,7 +449,7 @@ text = "PROCEDURE:
 - 1/2tbsp Water 
 and put them into a Coffee mug.
 2. Mix thoroughly using Tablespoon.
-3. Pour 1cup of milk into a Boiling pot.
+3. Pour 1/2 bottle of milk into a Boiling pot.
 4. Heat the Boiling pot on the stove for 2.5min, till the Milk boils.
 5. Pour the Milk into the Coffee mug carefully and mix thoroughly."
 label_settings = SubResource("LabelSettings_1lc3c")
@@ -399,28 +479,11 @@ label_settings = SubResource("LabelSettings_b30d6")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CountertopMouseDetectArea" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CountertopMouseDetectArea"]
-position = Vector2(957, 496)
-shape = SubResource("RectangleShape2D_2l8uc")
-
-[node name="StoveMouseDetectArea" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveMouseDetectArea"]
-position = Vector2(624.375, 525.5)
-shape = SubResource("RectangleShape2D_mi0y5")
-
-[node name="SinkMouseDetectArea" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="SinkMouseDetectArea"]
-position = Vector2(1228, 510)
-shape = SubResource("RectangleShape2D_t6thg")
-
+[connection signal="mouse_entered" from="StoveTop/StoveMouseDetectArea" to="." method="_on_component_area_mouse_entered" binds= [0]]
+[connection signal="mouse_exited" from="StoveTop/StoveMouseDetectArea" to="." method="_on_component_area_mouse_exited" binds= [0]]
+[connection signal="input_event" from="Countertop/CountertopMouseDetectArea" to="." method="_on_countertop_area_input_event"]
+[connection signal="mouse_entered" from="Countertop/CountertopMouseDetectArea" to="." method="_on_component_area_mouse_entered" binds= [1]]
+[connection signal="mouse_exited" from="Countertop/CountertopMouseDetectArea" to="." method="_on_component_area_mouse_exited" binds= [1]]
+[connection signal="mouse_entered" from="Sink/SinkMouseDetectArea" to="." method="_on_component_area_mouse_entered" binds= [2]]
+[connection signal="mouse_exited" from="Sink/SinkMouseDetectArea" to="." method="_on_component_area_mouse_exited" binds= [2]]
 [connection signal="toggled" from="ShowRecipeButton" to="." method="_on_show_recipe_button_toggled"]
-[connection signal="mouse_entered" from="CountertopMouseDetectArea" to="." method="_on_countertop_mouse_detect_area_entered"]
-[connection signal="mouse_exited" from="CountertopMouseDetectArea" to="." method="_on_countertop_mouse_detect_area_exited"]
-[connection signal="mouse_entered" from="StoveMouseDetectArea" to="." method="_on_stove_mouse_detect_area_entered"]
-[connection signal="mouse_exited" from="StoveMouseDetectArea" to="." method="_on_stove_mouse_detect_area_exited"]
-[connection signal="mouse_entered" from="SinkMouseDetectArea" to="." method="_on_sink_mouse_detect_area_entered"]
-[connection signal="mouse_exited" from="SinkMouseDetectArea" to="." method="_on_sink_mouse_detect_area_exited"]

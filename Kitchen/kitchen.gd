@@ -29,7 +29,7 @@ var count: int = 0
 @onready var error_label: Label = %"ErrorLabel"
 @onready var proceed_label: Label = %"ProceedLabel"
 
-var valid_selection_list: Array[String] = ["Coffee", "Milk bottle", "Sugar", "Coffee mug", "Boiling pot", "Tablespoon"]
+var valid_selection_list: Array[String] = ["Coffee", "Milk bottle", "Sugar", "Coffee mug", "Boiling pot", "Tablespoon", "Wood spoon"]
 
 #index of the component that is open
 #-1 if no component is open
@@ -48,15 +48,29 @@ func _on_component_input_event(viewport: Node, event: InputEvent, shape_idx: int
 				var open_component_list: ItemList = open_component_sprite.get_child(1)
 				open_component_sprite.set_frame_and_progress(0, 0)
 				open_component_list.visible = false
-			
+				open_component_sprite.set_instance_shader_parameter("enabled", false)
+				
 			component_sprite.set_frame_and_progress(1, 1)
 			component_list.visible = true
 			open_component_idx = component_sprite_idx
+			
+			component_sprite.set_instance_shader_parameter("enabled", true)
 			
 		else:
 			component_sprite.set_frame_and_progress(0, 0)
 			component_list.visible = false
 			open_component_idx = -1
+			
+			#component_sprite.set_instance_shader_parameter("enabled", false)
+
+func _on_component_area_mouse_entered(component_sprite_idx: int) -> void:
+	var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_idx]
+	component_sprite.set_instance_shader_parameter("enabled", true)
+	
+func _on_component_area_mouse_exited(component_sprite_idx: int) -> void:
+	var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_idx]
+	component_sprite.set_instance_shader_parameter("enabled", false)
+	
 
 #showing and hiding selection list
 #done when first top right button is toggled
@@ -130,7 +144,7 @@ func _on_check_selection_button_pressed() -> void:
 	else:
 		proceed_label.visible = true
 		
-		await get_tree().create_timer(4).timeout 
+		await get_tree().create_timer(3).timeout 
 		
 		get_tree().change_scene_to_file("res://Cooking/cooking.tscn")
 		return
@@ -150,3 +164,7 @@ func _on_check_selection_button_pressed() -> void:
 	
 	error_label.visible = false
 	
+
+
+func _on_fridge_area_mouse_shape_entered(shape_idx: int) -> void:
+	pass # Replace with function body.
