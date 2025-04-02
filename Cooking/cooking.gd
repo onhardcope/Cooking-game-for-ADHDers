@@ -41,6 +41,6 @@ func _on_component_area_mouse_exited(component_sprite_idx: int) -> void:
 
 func _on_countertop_area_input_event(viewport: Node, event: InputEvent, shape_idx: int):
 	if (event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT):
-		get_tree().change_scene_to_file("res://Countertop/countertop.tscn")
+		get_tree().change_scene_to_file("res://Countertop/cooking_zoomed_in.tscn")
 		
 		Input.set_custom_mouse_cursor(null)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://8ejkkjnb03sc"]
 
-[ext_resource type="Script" path="res://CreateSave/create_save.gd" id="1_bikef"]
+[ext_resource type="Script" uid="uid://dlsgtvscbn46j" path="res://CreateSave/create_save.gd" id="1_bikef"]
 
 [sub_resource type="SystemFont" id="SystemFont_sbyhk"]
 

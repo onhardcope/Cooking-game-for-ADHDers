@@ -1,0 +1,765 @@
+[gd_scene load_steps=72 format=3 uid="uid://wxhnd6tmnviy"]
+
+[ext_resource type="Script" uid="uid://dmb20aemqvk3u" path="res://CookingZoomedIn/cooking_zoomed_in.gd" id="1_1510h"]
+[ext_resource type="Texture2D" uid="uid://crovi2x84dqla" path="res://Assets/CookingZoomedIn/Extras/countertop scene/countertop_scene.png" id="2_v6ntu"]
+[ext_resource type="Shader" uid="uid://bwpxoqllf8xeh" path="res://Kitchen/highlight_outline.gdshader" id="3_41lah"]
+[ext_resource type="Texture2D" uid="uid://dmchqgnm2x7ce" path="res://Assets/CookingZoomedIn/Extras/countertop scene/countertop_for_highlight.png" id="4_1dni5"]
+[ext_resource type="Texture2D" uid="uid://inx2sojqychj" path="res://Assets/CookingZoomedIn/Extras/stove scene/stove_scene.png" id="5_41lah"]
+[ext_resource type="Texture2D" uid="uid://d3jflcyco1vf1" path="res://Assets/CookingZoomedIn/Extras/countertop scene/left_arrow2.png" id="5_cytsk"]
+[ext_resource type="Texture2D" uid="uid://bo3vdgosmu1v6" path="res://Assets/CookingZoomedIn/Inventory list textures/coffee_bottle.png" id="6_cu01f"]
+[ext_resource type="Texture2D" uid="uid://bfhcja8klcwe8" path="res://Assets/CookingZoomedIn/Extras/stove scene/right_arrow.png" id="6_v6ntu"]
+[ext_resource type="Texture2D" uid="uid://cq5qxnirpgf86" path="res://Assets/CookingZoomedIn/Inventory list textures/milk_bottle.png" id="7_bp10g"]
+[ext_resource type="Texture2D" uid="uid://cd3el4i6a7ney" path="res://Assets/Kitchen/recipe_book.png" id="8_1dni5"]
+[ext_resource type="Texture2D" uid="uid://dfbteucf11lv3" path="res://Assets/CookingZoomedIn/Inventory list textures/sugar_bottle.png" id="8_db1r8"]
+[ext_resource type="Texture2D" uid="uid://rej7grvmkq61" path="res://Assets/Kitchen/Utensils and Others/coffee_mug.png" id="9_87wv6"]
+[ext_resource type="Texture2D" uid="uid://cu2e612ajvo3s" path="res://Assets/Kitchen/Utensils and Others/tablespoon.png" id="10_j8a0j"]
+[ext_resource type="Texture2D" uid="uid://yfy3l8fm0111" path="res://Assets/Kitchen/Utensils and Others/boiling_pot.png" id="11_f1x3h"]
+[ext_resource type="Script" uid="uid://b6b4qee24nmoo" path="res://CookingZoomedIn/interaction_error_label.gd" id="12_fkvtd"]
+[ext_resource type="Texture2D" uid="uid://xnjs2pu8nt3l" path="res://Assets/CookingZoomedIn/Ingredients/sugar_bottle.png" id="13_eqpm5"]
+[ext_resource type="Texture2D" uid="uid://curvdvo4kmag" path="res://Assets/CookingZoomedIn/Ingredients/milk_bottle.png" id="14_psurm"]
+[ext_resource type="Texture2D" uid="uid://cumy6urptuhlc" path="res://Assets/CookingZoomedIn/Ingredients/coffee_bottle.png" id="15_qw8ry"]
+[ext_resource type="Texture2D" uid="uid://rsd54tvjboqe" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_1.png" id="16_7kmne"]
+[ext_resource type="Texture2D" uid="uid://qyybojp87d8q" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_2.png" id="17_mdi1p"]
+[ext_resource type="Texture2D" uid="uid://lshgv730t3ea" path="res://Assets/Kitchen/Utensils and Others/bowl.png" id="18_2q48e"]
+[ext_resource type="Texture2D" uid="uid://dwxqr1ybo2nkw" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_0.png" id="19_k7rwt"]
+[ext_resource type="Texture2D" uid="uid://bmyaqvpik8ugo" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_1.png" id="20_j82rr"]
+[ext_resource type="Texture2D" uid="uid://wemvgxlc8c6m" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_2.png" id="21_g64vj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_maqfh"]
+size = Vector2(1940, 143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fv2u6"]
+size = Vector2(1382, 209.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y05n1"]
+size = Vector2(545, 140)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_73v60"]
+size = Vector2(35, 755)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oj2sx"]
+size = Vector2(122, 848)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q6wo"]
+size = Vector2(542, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fj32b"]
+size = Vector2(1344, 738)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_maqfh"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(0.215363, 0.622677, 0.495171, 1)
+shader_parameter/width = 8.5
+shader_parameter/pattern = 2
+shader_parameter/inside = true
+shader_parameter/add_margins = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mb6j"]
+bg_color = Color(0, 0.325865, 0.128618, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbc70"]
+bg_color = Color(0, 0.490196, 0.207843, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56ogi"]
+bg_color = Color(0, 0.32549, 0.129412, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2q6wo"]
+bg_color = Color(8.42288e-07, 0.489163, 0.20876, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjb4g"]
+bg_color = Color(0.72549, 0.352941, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dp4b"]
+bg_color = Color(0.57563, 0.274613, 9.62615e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kowp"]
+bg_color = Color(0.723727, 0.35163, 3.85046e-07, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cytsk"]
+bg_color = Color(0, 0.403922, 0.588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.780392, 0.780392, 0.780392, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cu01f"]
+bg_color = Color(1.05888e-06, 0.330832, 0.485791, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bp10g"]
+bg_color = Color(0, 0.403922, 0.588235, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_db1r8"]
+bg_color = Color(5.29438e-07, 0.26458, 0.392931, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_87wv6"]
+font_size = 31
+font_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_j8a0j"]
+font_size = 20
+font_color = Color(0.321728, 0.321728, 0.321728, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f1x3h"]
+font_size = 20
+font_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fkvtd"]
+font_size = 20
+font_color = Color(0.377919, 0.377919, 0.377919, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fv2u6"]
+content_margin_left = 25.0
+content_margin_top = 18.0
+content_margin_right = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.08469, 0.0846899, 0.0846899, 1)
+border_width_left = 15
+border_width_top = 8
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.515097, 0.136039, 4.81308e-08, 1)
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y05n1"]
+bg_color = Color(0.162066, 0.162066, 0.162066, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 7
+border_color = Color(0.513726, 0.137255, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_73v60"]
+font_size = 45
+font_color = Color(0.76662, 0.76662, 0.76662, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x24wc"]
+size = Vector2(380, 725)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl6y5"]
+content_margin_left = 25.0
+bg_color = Color(0.839216, 0.0235294, 0, 0.686275)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.452658, 0.154437, 0.10936, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kj7oi"]
+font_size = 30
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fv2u6"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 6.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oj2sx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_eqpm5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jvbil"]
+size = Vector2(130, 144)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y05n1"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 4.5
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jvbil"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_psurm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_psurm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vl6y5"]
+size = Vector2(130, 288)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_73v60"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 4.5
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vl6y5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_qw8ry")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kj7oi"]
+size = Vector2(130, 176)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oj2sx"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 4.5
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kj7oi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_87wv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7kmne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mdi1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mdi1p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mb6j"]
+size = Vector2(150, 152)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jvbil"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 4.5
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_maqfh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_f1x3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2q48e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cbc70"]
+size = Vector2(150, 152)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vl6y5"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 4.5
+shader_parameter/pattern = 0
+shader_parameter/inside = true
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fv2u6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_k7rwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_j82rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_g64vj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_56ogi"]
+size = Vector2(142, 84)
+
+[node name="CookingZoomedIn" type="Node2D"]
+script = ExtResource("1_1510h")
+
+[node name="CountertopBackground" type="Sprite2D" parent="." groups=["countertop"]]
+texture = ExtResource("2_v6ntu")
+centered = false
+
+[node name="BackgroundArea" type="Area2D" parent="CountertopBackground"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CountertopBackground/BackgroundArea"]
+position = Vector2(960, 61.5)
+shape = SubResource("RectangleShape2D_maqfh")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CountertopBackground/BackgroundArea"]
+position = Vector2(687, 977.625)
+shape = SubResource("RectangleShape2D_fv2u6")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="CountertopBackground/BackgroundArea"]
+position = Vector2(1651.5, 1014)
+shape = SubResource("RectangleShape2D_y05n1")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CountertopBackground/BackgroundArea"]
+position = Vector2(13.5, 495.5)
+shape = SubResource("RectangleShape2D_73v60")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="CountertopBackground/BackgroundArea"]
+position = Vector2(1438, 544)
+shape = SubResource("RectangleShape2D_oj2sx")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="CountertopBackground/BackgroundArea"]
+position = Vector2(1648, 171)
+shape = SubResource("RectangleShape2D_2q6wo")
+
+[node name="WorkingArea" type="Area2D" parent="CountertopBackground"]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CountertopBackground/WorkingArea"]
+position = Vector2(704, 503)
+shape = SubResource("RectangleShape2D_fj32b")
+
+[node name="HighlightAreaRect" type="Sprite2D" parent="CountertopBackground"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_maqfh")
+instance_shader_parameters/enabled = false
+texture = ExtResource("4_1dni5")
+centered = false
+
+[node name="StoveBackground" type="Sprite2D" parent="." groups=["stove"]]
+visible = false
+texture = ExtResource("5_41lah")
+centered = false
+
+[node name="ShowInventoryListButton" type="Button" parent="."]
+offset_left = 1487.0
+offset_top = 10.0
+offset_right = 1666.0
+offset_bottom = 95.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_8mb6j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cbc70")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_56ogi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2q6wo")
+toggle_mode = true
+action_mode = 0
+text = "SHOW INVENTORY"
+autowrap_mode = 2
+
+[node name="GoToStoveButton" type="Button" parent="." groups=["countertop"]]
+offset_left = 36.0
+offset_top = 10.0
+offset_right = 215.0
+offset_bottom = 95.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjb4g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1dp4b")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7kowp")
+action_mode = 0
+text = "GO TO STOVE"
+icon = ExtResource("5_cytsk")
+autowrap_mode = 2
+
+[node name="GoToCountertopButton" type="Button" parent="." groups=["stove"]]
+visible = false
+offset_left = 1180.0
+offset_top = 10.0
+offset_right = 1359.0
+offset_bottom = 95.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxFlat_qjb4g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1dp4b")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7kowp")
+action_mode = 0
+text = "GO TO STOVE"
+icon = ExtResource("6_v6ntu")
+autowrap_mode = 2
+
+[node name="ShowRecipeButton" type="Button" parent="."]
+offset_left = 1730.0
+offset_top = 10.0
+offset_right = 1899.0
+offset_bottom = 95.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cytsk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cu01f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bp10g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_db1r8")
+toggle_mode = true
+action_mode = 0
+text = "CHECK RECIPE BOOK"
+autowrap_mode = 2
+
+[node name="RecipeBookSprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 2
+position = Vector2(-218, 0)
+scale = Vector2(1.05208, 1.05263)
+texture = ExtResource("8_1dni5")
+centered = false
+metadata/_edit_group_ = true
+
+[node name="HeaderLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 577.903
+offset_top = 294.5
+offset_right = 859.903
+offset_bottom = 338.5
+rotation = 0.0361464
+text = "COFFEE TIME!"
+label_settings = SubResource("LabelSettings_87wv6")
+
+[node name="IngredientsLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 578.0
+offset_top = 369.0
+offset_right = 885.0
+offset_bottom = 521.0
+rotation = 0.0238694
+text = "INGREDIENTS:
+1. Instant coffee powder (1tbsp)
+2. Sugar (1tbsp)
+3. Water (1/2tbsp) 
+4. Milk (1cup or 1/2 bottle)"
+label_settings = SubResource("LabelSettings_j8a0j")
+autowrap_mode = 2
+
+[node name="ExtraLabel" type="Label" parent="RecipeBookSprite"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UtensilsLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 576.951
+offset_top = 618.45
+offset_right = 778.951
+offset_bottom = 739.45
+rotation = 0.0211369
+text = "UTENSILS REQUIRED:
+1. Coffee mug
+2. Boiling pot
+3. Tablespoon"
+label_settings = SubResource("LabelSettings_f1x3h")
+
+[node name="ProcedureLabel" type="Label" parent="RecipeBookSprite"]
+offset_left = 918.178
+offset_top = 342.95
+offset_right = 1232.18
+offset_bottom = 835.95
+rotation = -0.00601494
+text = "PROCEDURE:
+1. Measure using Tablespoon:
+- 1tbsp Instant coffee powder, 
+- 1tbsp Sugar and 
+- 1/2tbsp Water 
+and put them into a Coffee mug.
+2. Mix thoroughly using Tablespoon.
+3. Pour 1/2 bottle of milk into a Boiling pot.
+4. Heat the Boiling pot on the stove for 2.5min, till the Milk boils.
+5. Pour the Milk into the Coffee mug carefully and mix thoroughly."
+label_settings = SubResource("LabelSettings_fkvtd")
+autowrap_mode = 2
+
+[node name="InventoryList" type="ItemList" parent="."]
+unique_name_in_owner = true
+z_index = 1
+clip_contents = false
+offset_left = 1487.0
+offset_top = 200.0
+offset_right = 1904.0
+offset_bottom = 957.0
+theme_override_colors/guide_color = Color(0.328503, 0.0746415, 2.40654e-08, 1)
+theme_override_constants/v_separation = 14
+theme_override_font_sizes/font_size = 46
+theme_override_styles/panel = SubResource("StyleBoxFlat_fv2u6")
+auto_height = true
+item_count = 6
+max_columns = 5
+fixed_column_width = 368
+icon_scale = 0.7
+item_0/text = "Coffee"
+item_0/icon = ExtResource("6_cu01f")
+item_1/text = "Milk bottle"
+item_1/icon = ExtResource("7_bp10g")
+item_2/text = "Sugar"
+item_2/icon = ExtResource("8_db1r8")
+item_3/text = "Coffee mug"
+item_3/icon = ExtResource("9_87wv6")
+item_4/text = "Tablespoon"
+item_4/icon = ExtResource("10_j8a0j")
+item_5/text = "Boiling pot"
+item_5/icon = ExtResource("11_f1x3h")
+
+[node name="Header" type="Label" parent="InventoryList"]
+layout_mode = 1
+anchors_preset = -1
+offset_top = -76.0
+offset_right = 417.0
+offset_bottom = 9.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_y05n1")
+text = "I N V E N T O R Y"
+label_settings = SubResource("LabelSettings_73v60")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InventoryListArea" type="Area2D" parent="InventoryList"]
+unique_name_in_owner = true
+z_index = 1
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InventoryList/InventoryListArea"]
+position = Vector2(209, 373.5)
+shape = SubResource("RectangleShape2D_x24wc")
+
+[node name="InteractionHintLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 432.0
+offset_top = 659.0
+offset_right = 956.0
+offset_bottom = 823.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vl6y5")
+text = "HINT:
+Coffee mug already contains coffee-sugar mixture"
+label_settings = SubResource("LabelSettings_kj7oi")
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("12_fkvtd")
+fade_out_duration = 3.0
+
+[node name="HintVisibleTimer" type="Timer" parent="InteractionHintLabel"]
+one_shot = true
+
+[node name="SugarBottle" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_fv2u6")
+instance_shader_parameters/enabled = false
+sprite_frames = SubResource("SpriteFrames_oj2sx")
+
+[node name="SugarBottleArea" type="Area2D" parent="SugarBottle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SugarBottle/SugarBottleArea"]
+shape = SubResource("RectangleShape2D_jvbil")
+
+[node name="MilkBottle" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_y05n1")
+sprite_frames = SubResource("SpriteFrames_jvbil")
+
+[node name="MilkBottleArea" type="Area2D" parent="MilkBottle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MilkBottle/MilkBottleArea"]
+shape = SubResource("RectangleShape2D_vl6y5")
+
+[node name="CoffeePowderBottle" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_73v60")
+sprite_frames = SubResource("SpriteFrames_vl6y5")
+
+[node name="CoffeePowderBottleArea" type="Area2D" parent="CoffeePowderBottle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeePowderBottle/CoffeePowderBottleArea"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_kj7oi")
+
+[node name="CoffeeMug" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_oj2sx")
+sprite_frames = SubResource("SpriteFrames_kj7oi")
+
+[node name="CoffeeMugArea" type="Area2D" parent="CoffeeMug"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeeMug/CoffeeMugArea"]
+shape = SubResource("RectangleShape2D_8mb6j")
+
+[node name="BoilingPot" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_jvbil")
+sprite_frames = SubResource("SpriteFrames_maqfh")
+
+[node name="BoilingPotArea" type="Area2D" parent="BoilingPot"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoilingPot/BoilingPotArea"]
+shape = SubResource("RectangleShape2D_cbc70")
+
+[node name="Tablespoon" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_vl6y5")
+instance_shader_parameters/enabled = false
+sprite_frames = SubResource("SpriteFrames_fv2u6")
+
+[node name="TablespoonArea" type="Area2D" parent="Tablespoon"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tablespoon/TablespoonArea"]
+shape = SubResource("RectangleShape2D_56ogi")
+
+[connection signal="input_event" from="CountertopBackground/BackgroundArea" to="." method="_on_background_area_input_event"]
+[connection signal="input_event" from="CountertopBackground/WorkingArea" to="." method="_on_working_area_input_event"]
+[connection signal="mouse_entered" from="CountertopBackground/WorkingArea" to="." method="_on_working_area_mouse_entered"]
+[connection signal="mouse_exited" from="CountertopBackground/WorkingArea" to="." method="_on_working_area_mouse_exited"]
+[connection signal="toggled" from="ShowInventoryListButton" to="." method="_on_show_inventory_list_button_toggled"]
+[connection signal="pressed" from="GoToStoveButton" to="." method="_on_go_to_stove_button_pressed"]
+[connection signal="pressed" from="GoToCountertopButton" to="." method="_on_go_to_countertop_button_pressed"]
+[connection signal="toggled" from="ShowRecipeButton" to="." method="_on_show_recipe_button_toggled"]
+[connection signal="gui_input" from="InventoryList" to="." method="_on_inventory_list_gui_input"]
+[connection signal="item_selected" from="InventoryList" to="." method="_on_inventory_list_item_selected"]
+[connection signal="input_event" from="InventoryList/InventoryListArea" to="." method="_on_inventory_list_area_input_event"]
+[connection signal="input_event" from="SugarBottle/SugarBottleArea" to="." method="_on_placed_item_area_input_event" binds= ["Sugar"]]
+[connection signal="mouse_entered" from="SugarBottle/SugarBottleArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Sugar"]]
+[connection signal="mouse_exited" from="SugarBottle/SugarBottleArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Sugar"]]
+[connection signal="input_event" from="MilkBottle/MilkBottleArea" to="." method="_on_placed_item_area_input_event" binds= ["Milk bottle"]]
+[connection signal="mouse_entered" from="MilkBottle/MilkBottleArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Milk bottle"]]
+[connection signal="mouse_exited" from="MilkBottle/MilkBottleArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Milk bottle"]]
+[connection signal="input_event" from="CoffeePowderBottle/CoffeePowderBottleArea" to="." method="_on_placed_item_area_input_event" binds= ["Coffee"]]
+[connection signal="mouse_entered" from="CoffeePowderBottle/CoffeePowderBottleArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Coffee"]]
+[connection signal="mouse_exited" from="CoffeePowderBottle/CoffeePowderBottleArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Coffee"]]
+[connection signal="input_event" from="CoffeeMug/CoffeeMugArea" to="." method="_on_placed_item_area_input_event" binds= ["Coffee mug"]]
+[connection signal="mouse_entered" from="CoffeeMug/CoffeeMugArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Coffee mug"]]
+[connection signal="mouse_exited" from="CoffeeMug/CoffeeMugArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Coffee mug"]]
+[connection signal="input_event" from="BoilingPot/BoilingPotArea" to="." method="_on_placed_item_area_input_event" binds= ["Boiling pot"]]
+[connection signal="mouse_entered" from="BoilingPot/BoilingPotArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Boiling pot"]]
+[connection signal="mouse_exited" from="BoilingPot/BoilingPotArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Boiling pot"]]
+[connection signal="input_event" from="Tablespoon/TablespoonArea" to="." method="_on_placed_item_area_input_event" binds= ["Tablespoon"]]
+[connection signal="mouse_entered" from="Tablespoon/TablespoonArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Tablespoon"]]
+[connection signal="mouse_exited" from="Tablespoon/TablespoonArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Tablespoon"]]

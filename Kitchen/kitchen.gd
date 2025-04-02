@@ -1,7 +1,7 @@
 extends Node2D
 
-var count: int = 0
-#setting up variables for each component sprite
+#variables for each component sprite
+#component means cupboards and fridge
 @onready var fridge_sprite: AnimatedSprite2D = %"Fridge"
 @onready var top_left_sprite: AnimatedSprite2D = %"TopLeft"
 @onready var top_right_sprite: AnimatedSprite2D = %"TopRight"
@@ -13,38 +13,48 @@ var count: int = 0
 @onready var bottom_middle_1_sprite: AnimatedSprite2D = %"BottomMiddle1"
 
 #array of all component sprites
+#used for easily accessing sprite using array index
 @onready var all_sprites: Array = [fridge_sprite, 
 								top_left_sprite, top_right_sprite, top_middle_sprite,
 								bottom_left_sprite, bottom_right_sprite,
 								bottom_middle_3_sprite, bottom_middle_2_sprite, bottom_middle_1_sprite]
 
-#setting up variable for selection_list
+#variable for selection_list
 @onready var selection_list: ItemList = %"SelectionList"
 
-#setting up variable for recipe book sprite
+#variable for recipe book sprite
 @onready var recipe_book_sprite: Sprite2D = %"RecipeBookSprite"
 
-#setting up variables for proceed and error labels
-#these are for message to be shown after checking selected items
+#variables for proceed and error labels
+#these are for the message to be shown after checking if selected items are correct or not
 @onready var error_label: Label = %"ErrorLabel"
 @onready var proceed_label: Label = %"ProceedLabel"
 
-var valid_selection_list: Array[String] = ["Coffee", "Milk bottle", "Sugar", "Coffee mug", "Boiling pot", "Tablespoon", "Wood spoon"]
+#array of names of correct ingredients selection
+#we check if our selected ingredients are correct using this array
+var valid_selection_list: Array[String] = ["Coffee", "Milk bottle", "Sugar", "Coffee mug", "Boiling pot", "Tablespoon"]
 
-#index of the component that is open
-#-1 if no component is open
-var open_component_idx: int = -1
+#index (in all_sprites array) of the component that is open currently
+#only one component can be open at a time. thats why we can use this technique.
+#-1 if all components are closed
+var open_component_index: int = -1
 
 #opening and closing components when clicked
 #showing and hiding component lists
-func _on_component_input_event(viewport: Node, event: InputEvent, shape_idx: int, component_sprite_idx: int) -> void:
+func _on_component_input_event(viewport: Node, event: InputEvent, shape_idx: int, component_sprite_index: int) -> void:
 	if (event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT):
-		var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_idx]
+		var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_index]
+		
 		var component_list: ItemList = component_sprite.get_child(1)
-
-		if (open_component_idx != component_sprite_idx):
-			if (open_component_idx >= 0):
-				var open_component_sprite: AnimatedSprite2D = all_sprites[open_component_idx]
+		
+		if (component_sprite_index == open_component_index):
+			component_sprite.set_frame_and_progress(0, 0)
+			component_list.visible = false
+			open_component_index = -1
+			
+		else:
+			if (open_component_index >= 0):
+				var open_component_sprite: AnimatedSprite2D = all_sprites[open_component_index]
 				var open_component_list: ItemList = open_component_sprite.get_child(1)
 				open_component_sprite.set_frame_and_progress(0, 0)
 				open_component_list.visible = false
@@ -52,45 +62,36 @@ func _on_component_input_event(viewport: Node, event: InputEvent, shape_idx: int
 				
 			component_sprite.set_frame_and_progress(1, 1)
 			component_list.visible = true
-			open_component_idx = component_sprite_idx
+			open_component_index = component_sprite_index
 			
 			component_sprite.set_instance_shader_parameter("enabled", true)
 			
-		else:
-			component_sprite.set_frame_and_progress(0, 0)
-			component_list.visible = false
-			open_component_idx = -1
-			
-			#component_sprite.set_instance_shader_parameter("enabled", false)
 
-func _on_component_area_mouse_entered(component_sprite_idx: int) -> void:
-	var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_idx]
+func _on_component_area_mouse_entered(component_sprite_index: int) -> void:
+	var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_index]
 	component_sprite.set_instance_shader_parameter("enabled", true)
 	
-func _on_component_area_mouse_exited(component_sprite_idx: int) -> void:
-	var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_idx]
+func _on_component_area_mouse_exited(component_sprite_index: int) -> void:
+	var component_sprite: AnimatedSprite2D = all_sprites[component_sprite_index]
 	component_sprite.set_instance_shader_parameter("enabled", false)
 	
 
 #showing and hiding selection list
 #done when first top right button is toggled
 func _on_show_selection_list_button_toggled(toggled_on: bool) -> void:
-	if (toggled_on):
-		selection_list.visible = true
-	else:
-		selection_list.visible = false
+	selection_list.visible = toggled_on
 
 #showing and hiding recipe book
 #done when second top right button is toggled
 func _on_show_recipe_button_toggled(toggled_on: bool) -> void:
-	if (toggled_on):
-		recipe_book_sprite.visible = true
-	else:
-		recipe_book_sprite.visible = false
+	recipe_book_sprite.visible = toggled_on
+	for sprite in all_sprites:
+		var sprite_area: Area2D = sprite.get_child(0)
+		sprite_area.input_pickable = not toggled_on
 
 #transfer item: FROM open component TO selection list
 func _on_component_list_item_selected(index: int) -> void:
-	var open_component_list: ItemList = all_sprites[open_component_idx].get_child(1)
+	var open_component_list: ItemList = all_sprites[open_component_index].get_child(1)
 	var ingredient_name: String = open_component_list.get_item_text(index)
 	var ingredient_icon: Texture2D = open_component_list.get_item_icon(index)
 	open_component_list.remove_item(index)
@@ -98,8 +99,8 @@ func _on_component_list_item_selected(index: int) -> void:
 
 #transfer item: FROM selection list TO open component ONLY IF a component is open
 func _on_selection_list_item_clicked(index: int, at_position: Vector2, mouse_button_index: int) -> void:
-	if (open_component_idx >= 0):
-		var open_component_list: ItemList = all_sprites[open_component_idx].get_child(1)
+	if (open_component_index >= 0):
+		var open_component_list: ItemList = all_sprites[open_component_index].get_child(1)
 		var ingredient_name: String = selection_list.get_item_text(index)
 		var ingredient_icon: Texture2D = selection_list.get_item_icon(index)
 		selection_list.remove_item(index)
@@ -107,9 +108,8 @@ func _on_selection_list_item_clicked(index: int, at_position: Vector2, mouse_but
 
 #checking if selection is correct
 #two error conditions: unnecessary item found, necessary item not found
-#provide hints for these errors
+#provide hints for these two errors
 func _on_check_selection_button_pressed() -> void:
-	count = 0 
 	var unnecessary_item_found: bool = false
 	var items_to_remove: Array[String]
 	
@@ -123,9 +123,8 @@ func _on_check_selection_button_pressed() -> void:
 	
 	var no_of_items: int = selection_list.item_count
 	
-	
-	for idx: int in range(no_of_items):
-		var item_name: String = selection_list.get_item_text(idx)
+	for index: int in range(no_of_items):
+		var item_name: String = selection_list.get_item_text(index)
 		selected_item_names.append(item_name)
 	
 	for item_name: String in selected_item_names:
@@ -133,8 +132,8 @@ func _on_check_selection_button_pressed() -> void:
 			unnecessary_item_found = true
 			items_to_remove.append(item_name)
 		else:
-			var valid_item_idx: int = temp_valid_selection_list.find(item_name)
-			temp_valid_selection_list.remove_at(valid_item_idx)
+			var valid_item_index: int = temp_valid_selection_list.find(item_name)
+			temp_valid_selection_list.remove_at(valid_item_index)
 	
 	if not temp_valid_selection_list.is_empty():
 		necessary_item_not_found = true
@@ -146,7 +145,7 @@ func _on_check_selection_button_pressed() -> void:
 		
 		await get_tree().create_timer(3).timeout 
 		
-		get_tree().change_scene_to_file("res://Cooking/cooking.tscn")
+		get_tree().change_scene_to_file("res://CookingZoomedIn/cooking_zoomed_in.tscn")
 		return
 	
 	var wait_time: int = 0
@@ -164,7 +163,3 @@ func _on_check_selection_button_pressed() -> void:
 	
 	error_label.visible = false
 	
-
-
-func _on_fridge_area_mouse_shape_entered(shape_idx: int) -> void:
-	pass # Replace with function body.
