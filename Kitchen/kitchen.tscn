@@ -371,19 +371,19 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 shadow_offset = Vector2(-4, 4)
 
-[sub_resource type="LabelSettings" id="LabelSettings_xdkec"]
+[sub_resource type="LabelSettings" id="LabelSettings_6o0y6"]
 font_size = 31
 font_color = Color(0.321569, 0.321569, 0.321569, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_nfpq2"]
+[sub_resource type="LabelSettings" id="LabelSettings_yctba"]
 font_size = 20
 font_color = Color(0.321728, 0.321728, 0.321728, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_l81m5"]
+[sub_resource type="LabelSettings" id="LabelSettings_8r8bd"]
 font_size = 20
 font_color = Color(0.321569, 0.321569, 0.321569, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_doful"]
+[sub_resource type="LabelSettings" id="LabelSettings_r1v12"]
 font_size = 20
 font_color = Color(0.377919, 0.377919, 0.377919, 1)
 
@@ -858,9 +858,11 @@ autowrap_mode = 2
 unique_name_in_owner = true
 visible = false
 z_index = 2
+position = Vector2(-1, 0)
 scale = Vector2(1.05208, 1.05263)
 texture = ExtResource("27_v5nrd")
 centered = false
+metadata/_edit_group_ = true
 
 [node name="HeaderLabel" type="Label" parent="RecipeBookSprite"]
 offset_left = 577.903
@@ -869,7 +871,7 @@ offset_right = 859.903
 offset_bottom = 338.5
 rotation = 0.0361464
 text = "COFFEE TIME!"
-label_settings = SubResource("LabelSettings_xdkec")
+label_settings = SubResource("LabelSettings_6o0y6")
 
 [node name="IngredientsLabel" type="Label" parent="RecipeBookSprite"]
 offset_left = 578.0
@@ -880,9 +882,9 @@ rotation = 0.0238694
 text = "INGREDIENTS:
 1. Instant coffee powder (1tbsp)
 2. Sugar (1tbsp)
-3. Water (1/2tbsp) 
-4. Milk (1cup or 1/2 bottle)"
-label_settings = SubResource("LabelSettings_nfpq2")
+3. Milk (1cup or 1/2 bottle)
+4. A handful of care and love"
+label_settings = SubResource("LabelSettings_yctba")
 autowrap_mode = 2
 
 [node name="ExtraLabel" type="Label" parent="RecipeBookSprite"]
@@ -899,25 +901,27 @@ text = "UTENSILS REQUIRED:
 1. Coffee mug
 2. Boiling pot
 3. Tablespoon"
-label_settings = SubResource("LabelSettings_l81m5")
+label_settings = SubResource("LabelSettings_8r8bd")
 
 [node name="ProcedureLabel" type="Label" parent="RecipeBookSprite"]
-offset_left = 918.178
-offset_top = 342.95
-offset_right = 1232.18
-offset_bottom = 835.95
+offset_left = 916.28
+offset_top = 304.95
+offset_right = 1240.28
+offset_bottom = 890.95
 rotation = -0.00601494
 text = "PROCEDURE:
-1. Measure using Tablespoon:
-- 1tbsp Instant coffee powder, 
-- 1tbsp Sugar and 
-- 1/2tbsp Water 
+1. Pour 1/2 bottle of milk into a Boiling pot.
+2. Place the Boiling pot on the stove.
+3. Turn on the stove in medium heat for 2.5min, till the milk boils.
+4. While the milk boils, 
+measure using Tablespoon:
+- 1tbsp Instant coffee powder
+- 1tbsp Sugar
 and put them into a Coffee mug.
-2. Mix thoroughly using Tablespoon.
-3. Pour 1/2 bottle of milk into a Boiling pot.
-4. Heat the Boiling pot on the stove for 2.5min, till the Milk boils.
-5. Pour the Milk into the Coffee mug carefully and mix thoroughly."
-label_settings = SubResource("LabelSettings_doful")
+5. After milk boils, turn off the stove.
+6. Pour the Milk into the Coffee mug carefully.
+7. Mix thoroughly using Tablespoon."
+label_settings = SubResource("LabelSettings_r1v12")
 autowrap_mode = 2
 
 [node name="CheckSelectionButton" type="Button" parent="."]

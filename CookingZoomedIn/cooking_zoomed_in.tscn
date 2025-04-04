@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://wxhnd6tmnviy"]
+[gd_scene load_steps=201 format=3 uid="uid://wxhnd6tmnviy"]
 
 [ext_resource type="Script" uid="uid://dmb20aemqvk3u" path="res://CookingZoomedIn/cooking_zoomed_in.gd" id="1_1510h"]
 [ext_resource type="Texture2D" uid="uid://crovi2x84dqla" path="res://Assets/CookingZoomedIn/Extras/countertop scene/countertop_scene.png" id="2_v6ntu"]
@@ -6,24 +6,110 @@
 [ext_resource type="Texture2D" uid="uid://dmchqgnm2x7ce" path="res://Assets/CookingZoomedIn/Extras/countertop scene/countertop_for_highlight.png" id="4_1dni5"]
 [ext_resource type="Texture2D" uid="uid://inx2sojqychj" path="res://Assets/CookingZoomedIn/Extras/stove scene/stove_scene.png" id="5_41lah"]
 [ext_resource type="Texture2D" uid="uid://d3jflcyco1vf1" path="res://Assets/CookingZoomedIn/Extras/countertop scene/left_arrow2.png" id="5_cytsk"]
+[ext_resource type="Texture2D" uid="uid://ey1aa1qvc4hx" path="res://Assets/CookingZoomedIn/Extras/stove scene/heating elements/top_left_heater.png" id="6_4kfse"]
+[ext_resource type="Texture2D" uid="uid://dklt0p3jhr8h8" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_0.png" id="6_6f2bg"]
 [ext_resource type="Texture2D" uid="uid://bo3vdgosmu1v6" path="res://Assets/CookingZoomedIn/Inventory list textures/coffee_bottle.png" id="6_cu01f"]
 [ext_resource type="Texture2D" uid="uid://bfhcja8klcwe8" path="res://Assets/CookingZoomedIn/Extras/stove scene/right_arrow.png" id="6_v6ntu"]
 [ext_resource type="Texture2D" uid="uid://cq5qxnirpgf86" path="res://Assets/CookingZoomedIn/Inventory list textures/milk_bottle.png" id="7_bp10g"]
+[ext_resource type="Texture2D" uid="uid://chs2kox011y8w" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_1.png" id="7_pij8l"]
+[ext_resource type="Texture2D" uid="uid://b30oy81xufvfu" path="res://Assets/CookingZoomedIn/Extras/stove scene/heating elements/bottom_left_heater.png" id="7_pvsa8"]
+[ext_resource type="Texture2D" uid="uid://blluw0dqd2krq" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_0.png" id="7_u48wu"]
 [ext_resource type="Texture2D" uid="uid://cd3el4i6a7ney" path="res://Assets/Kitchen/recipe_book.png" id="8_1dni5"]
+[ext_resource type="Texture2D" uid="uid://buvmhj4v54eqo" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_1.png" id="8_77yjg"]
+[ext_resource type="Texture2D" uid="uid://cc2wmelnl8n2r" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_2.png" id="8_b3kxh"]
 [ext_resource type="Texture2D" uid="uid://dfbteucf11lv3" path="res://Assets/CookingZoomedIn/Inventory list textures/sugar_bottle.png" id="8_db1r8"]
+[ext_resource type="Texture2D" uid="uid://dlybfpc0yblmd" path="res://Assets/CookingZoomedIn/Extras/stove scene/heating elements/top_right_heater.png" id="8_p3hwe"]
+[ext_resource type="Texture2D" uid="uid://dxv1ewl4rtk6h" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_2.png" id="9_53wen"]
 [ext_resource type="Texture2D" uid="uid://rej7grvmkq61" path="res://Assets/Kitchen/Utensils and Others/coffee_mug.png" id="9_87wv6"]
+[ext_resource type="Texture2D" uid="uid://dbb45xfx6l7y4" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_3.png" id="9_b0gro"]
+[ext_resource type="Texture2D" uid="uid://bne1h62hq5en4" path="res://Assets/CookingZoomedIn/Extras/stove scene/heating elements/bottom_right_heater.png" id="9_lhixa"]
+[ext_resource type="Texture2D" uid="uid://kefsn54jtlsa" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_3.png" id="10_643bg"]
 [ext_resource type="Texture2D" uid="uid://cu2e612ajvo3s" path="res://Assets/Kitchen/Utensils and Others/tablespoon.png" id="10_j8a0j"]
+[ext_resource type="Texture2D" uid="uid://rm8o22726rts" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_4.png" id="10_xfmnt"]
+[ext_resource type="Texture2D" uid="uid://foe3mcijgjqn" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_4.png" id="11_c224f"]
 [ext_resource type="Texture2D" uid="uid://yfy3l8fm0111" path="res://Assets/Kitchen/Utensils and Others/boiling_pot.png" id="11_f1x3h"]
+[ext_resource type="Texture2D" uid="uid://b4vp76s85yc7i" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_5.png" id="11_rcref"]
+[ext_resource type="Texture2D" uid="uid://7vlcm2fvdi25" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_5.png" id="12_0ijke"]
 [ext_resource type="Script" uid="uid://b6b4qee24nmoo" path="res://CookingZoomedIn/interaction_error_label.gd" id="12_fkvtd"]
+[ext_resource type="Texture2D" uid="uid://7d08ap5s7t2j" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_6.png" id="12_t8q4i"]
+[ext_resource type="Texture2D" uid="uid://dqg8uit7d0uo3" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_7.png" id="13_53n25"]
 [ext_resource type="Texture2D" uid="uid://xnjs2pu8nt3l" path="res://Assets/CookingZoomedIn/Ingredients/sugar_bottle.png" id="13_eqpm5"]
+[ext_resource type="Texture2D" uid="uid://c5wjh1038eoqo" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_6.png" id="13_yrq44"]
+[ext_resource type="Texture2D" uid="uid://bcbbyringc5af" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_7.png" id="14_0cchb"]
+[ext_resource type="Texture2D" uid="uid://cgc6gtrxbmxsx" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/White Filled Circle.png" id="14_pij8l"]
 [ext_resource type="Texture2D" uid="uid://curvdvo4kmag" path="res://Assets/CookingZoomedIn/Ingredients/milk_bottle.png" id="14_psurm"]
+[ext_resource type="Texture2D" uid="uid://dtys7fjvbqy6n" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_outline.png" id="15_88ylt"]
 [ext_resource type="Texture2D" uid="uid://cumy6urptuhlc" path="res://Assets/CookingZoomedIn/Ingredients/coffee_bottle.png" id="15_qw8ry"]
 [ext_resource type="Texture2D" uid="uid://rsd54tvjboqe" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_1.png" id="16_7kmne"]
+[ext_resource type="Texture2D" uid="uid://8t6nprfp0flk" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_0.png" id="16_340i5"]
+[ext_resource type="Texture2D" uid="uid://swxend7acd1i" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_1.png" id="17_7dff7"]
 [ext_resource type="Texture2D" uid="uid://qyybojp87d8q" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_2.png" id="17_mdi1p"]
-[ext_resource type="Texture2D" uid="uid://lshgv730t3ea" path="res://Assets/Kitchen/Utensils and Others/bowl.png" id="18_2q48e"]
+[ext_resource type="Texture2D" uid="uid://bttw43r8fb8th" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_2.png" id="18_tcp4g"]
+[ext_resource type="Texture2D" uid="uid://ddo2uf242w17u" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_3.png" id="19_7o68m"]
 [ext_resource type="Texture2D" uid="uid://dwxqr1ybo2nkw" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_0.png" id="19_k7rwt"]
+[ext_resource type="Texture2D" uid="uid://cvhaxwsagno7j" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_4.png" id="20_f32wr"]
 [ext_resource type="Texture2D" uid="uid://bmyaqvpik8ugo" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_1.png" id="20_j82rr"]
 [ext_resource type="Texture2D" uid="uid://wemvgxlc8c6m" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_2.png" id="21_g64vj"]
+[ext_resource type="Texture2D" uid="uid://s4muj3vxli2b" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_5.png" id="21_xw24x"]
+[ext_resource type="Texture2D" uid="uid://w1phgycxhgk" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_6.png" id="22_s6nh0"]
+[ext_resource type="Texture2D" uid="uid://dv7tqtvicphb1" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_7.png" id="23_oelw3"]
+[ext_resource type="Texture2D" uid="uid://cntu0ekgjawfw" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/element position indicator/knob_1.png" id="24_yjvo5"]
+[ext_resource type="Texture2D" uid="uid://k71s4hvjkjen" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_0.png" id="25_oe23v"]
+[ext_resource type="Texture2D" uid="uid://cubc2dytesk88" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_outline.png" id="25_se6vf"]
+[ext_resource type="Texture2D" uid="uid://dbfn2fi0yc5l" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_1.png" id="26_3qas5"]
+[ext_resource type="Texture2D" uid="uid://df3ianwacynci" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_2.png" id="27_77hq8"]
+[ext_resource type="Texture2D" uid="uid://bgyei4wefioi0" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_3.png" id="28_uj2fr"]
+[ext_resource type="Texture2D" uid="uid://dguc48t3s3ffo" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_4.png" id="29_acahs"]
+[ext_resource type="Texture2D" uid="uid://clq4p6c722w00" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_5.png" id="30_x0vss"]
+[ext_resource type="Texture2D" uid="uid://c8wvi53wc7xbo" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_6.png" id="31_snwxe"]
+[ext_resource type="Texture2D" uid="uid://cbbjgcivunlyg" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_7.png" id="32_5k314"]
+[ext_resource type="Texture2D" uid="uid://ckklqg8468f2m" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_0.png" id="34_1xsoy"]
+[ext_resource type="Texture2D" uid="uid://dxbji0f2idnkx" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_1.png" id="35_36eqy"]
+[ext_resource type="Texture2D" uid="uid://bqvwxfnagb6c4" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/element position indicator/knob_2.png" id="35_84pqx"]
+[ext_resource type="Texture2D" uid="uid://c0htmkgtnbbt" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 3/knob_3_outline.png" id="35_nih7h"]
+[ext_resource type="Texture2D" uid="uid://dotaoe2hhswua" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_2.png" id="36_4y60q"]
+[ext_resource type="Texture2D" uid="uid://dejy5oaj874wy" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_3.png" id="37_ymnmf"]
+[ext_resource type="Texture2D" uid="uid://t4n1hxyotoob" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_4.png" id="38_bb4wa"]
+[ext_resource type="Texture2D" uid="uid://can57x7t1g12r" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_5.png" id="39_shyix"]
+[ext_resource type="Texture2D" uid="uid://48kigb1pt6dn" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_6.png" id="40_5inpn"]
+[ext_resource type="Texture2D" uid="uid://cc5qivqtqqgj2" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_7.png" id="41_u1tvu"]
+[ext_resource type="Texture2D" uid="uid://dfy4xloy66fru" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 4/knob_4_outline.png" id="45_eit7l"]
+[ext_resource type="Texture2D" uid="uid://bmfd0s2yh0464" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/element position indicator/knob_3.png" id="46_wg5oo"]
+[ext_resource type="Texture2D" uid="uid://dmrlb8ta0sryk" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/boiling_pot_0.png" id="57_0ijke"]
+[ext_resource type="Texture2D" uid="uid://beliv134jnx7y" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/element position indicator/knob_4.png" id="57_vcdks"]
+[ext_resource type="Texture2D" uid="uid://cdlpadyfaidok" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/boiling_pot_1.png" id="58_yrq44"]
+[ext_resource type="Texture2D" uid="uid://npp6m0elx5n4" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/boiling_pot_2.png" id="59_0cchb"]
+[ext_resource type="Texture2D" uid="uid://bgqdfb42sh0cg" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/boiling_pot_3.png" id="60_340i5"]
+[ext_resource type="Texture2D" uid="uid://dr7fdy1kelxkb" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/boiling_pot_4.png" id="61_7dff7"]
+[ext_resource type="Texture2D" uid="uid://csffowskdmcpu" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/boiling_pot_5.png" id="62_tcp4g"]
+[ext_resource type="Texture2D" uid="uid://c14dh5l4t4kr6" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_0.png" id="63_5inpn"]
+[ext_resource type="Texture2D" uid="uid://ymcxl5cffuge" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_1.png" id="64_u1tvu"]
+[ext_resource type="Texture2D" uid="uid://f3vafc70xyir" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_2.png" id="65_vqrp7"]
+[ext_resource type="Texture2D" uid="uid://dis556vpoyda1" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_3.png" id="66_31r0k"]
+[ext_resource type="Texture2D" uid="uid://cyxa3nirmdckx" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_4.png" id="67_88ylt"]
+[ext_resource type="Texture2D" uid="uid://bbqmn7y5ncos2" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_5.png" id="68_se6vf"]
+[ext_resource type="Texture2D" uid="uid://ciuukko4r3286" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_6.png" id="69_nih7h"]
+[ext_resource type="Texture2D" uid="uid://dtoj80lnm7cr7" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_7.png" id="70_eit7l"]
+[ext_resource type="Texture2D" uid="uid://bkqoexr8d7xeu" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_8.png" id="71_dijtp"]
+[ext_resource type="Texture2D" uid="uid://qpjxi6aayooq" path="res://Assets/CookingZoomedIn/Ingredients/milk_bottle_1.png" id="71_xfmnt"]
+[ext_resource type="Texture2D" uid="uid://dom3qxb7bc0ti" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_9.png" id="72_y1xvm"]
+[ext_resource type="Texture2D" uid="uid://60v2jiynyf7l" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_10.png" id="73_15t0a"]
+[ext_resource type="Texture2D" uid="uid://b17migpgab5m4" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_4.png" id="74_b0gro"]
+[ext_resource type="Texture2D" uid="uid://due88hs4fqgn5" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_11.png" id="74_ravdj"]
+[ext_resource type="Texture2D" uid="uid://57xavoj4luej" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_12.png" id="75_d86lf"]
+[ext_resource type="Texture2D" uid="uid://dje1kxtnpml0t" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_5.png" id="75_xfmnt"]
+[ext_resource type="Texture2D" uid="uid://sa4mwir0kg38" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_13.png" id="76_ggp6j"]
+[ext_resource type="Texture2D" uid="uid://ctsm27b4rnico" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_14.png" id="77_g6n7v"]
+[ext_resource type="Texture2D" uid="uid://dmgvyjxltqrqi" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_15.png" id="78_wpji8"]
+[ext_resource type="Texture2D" uid="uid://ctcg5w57tcr6q" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_16.png" id="79_6f2bg"]
+[ext_resource type="Texture2D" uid="uid://dxpa8vr8h4juf" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_17.png" id="80_pij8l"]
+[ext_resource type="Texture2D" uid="uid://bwlqfxb57xfh8" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_18.png" id="81_b3kxh"]
+[ext_resource type="Texture2D" uid="uid://o2b00toehkl6" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_19.png" id="82_b0gro"]
+[ext_resource type="Texture2D" uid="uid://bynckgw7m83pt" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_20.png" id="83_xfmnt"]
+[ext_resource type="Texture2D" uid="uid://df3hekhfp5hce" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_21.png" id="84_rcref"]
+[ext_resource type="Texture2D" uid="uid://dk880b8p0ipk" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_22.png" id="85_t8q4i"]
+[ext_resource type="Texture2D" uid="uid://chtmjhrjb65ae" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_23.png" id="86_53n25"]
+[ext_resource type="Texture2D" uid="uid://c5v5oduclei7h" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_24.png" id="87_yjvo5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_maqfh"]
 size = Vector2(1940, 143)
@@ -54,96 +140,155 @@ shader_parameter/pattern = 2
 shader_parameter/inside = true
 shader_parameter/add_margins = false
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mb6j"]
-bg_color = Color(0, 0.325865, 0.128618, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.780392, 0.780392, 0.780392, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl6y5"]
+content_margin_left = 25.0
+bg_color = Color(0.839216, 0.0235294, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.45098, 0.152941, 0.109804, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 shadow_offset = Vector2(-3, 3)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbc70"]
-bg_color = Color(0, 0.490196, 0.207843, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.779291, 0.779291, 0.779291, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-3, 3)
+[sub_resource type="LabelSettings" id="LabelSettings_kj7oi"]
+font_size = 30
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56ogi"]
-bg_color = Color(0, 0.32549, 0.129412, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-3, 3)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iptv4"]
+size = Vector2(1940, 203)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2q6wo"]
-bg_color = Color(8.42288e-07, 0.489163, 0.20876, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.366594, 0.366595, 0.366594, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-4, 4)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kfse"]
+size = Vector2(1511, 57)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjb4g"]
-bg_color = Color(0.72549, 0.352941, 0, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.779291, 0.779291, 0.779291, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-3, 3)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pvsa8"]
+size = Vector2(1511, 107)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dp4b"]
-bg_color = Color(0.57563, 0.274613, 9.62615e-08, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-3, 3)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3hwe"]
+size = Vector2(263.5, 285)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kowp"]
-bg_color = Color(0.723727, 0.35163, 3.85046e-07, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.366594, 0.366595, 0.366594, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-4, 4)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lhixa"]
+size = Vector2(73, 283)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yv8m0"]
+size = Vector2(117, 322.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pkru8"]
+size = Vector2(165.625, 315.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2n45o"]
+size = Vector2(134, 281.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7oru"]
+size = Vector2(37, 319.625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vqrp7"]
+size = Vector2(427, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31r0k"]
+size = Vector2(305, 157)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88ylt"]
+size = Vector2(430, 140)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5inpn"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 8.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hsuto"]
+size = Vector2(516, 265)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_88ylt"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 3.0
+shader_parameter/pattern = 1
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_se6vf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_u48wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_77yjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_53wen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_643bg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_c224f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0ijke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yrq44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0cchb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nih7h"]
+size = Vector2(144, 146)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_se6vf"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 8.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_veelo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_6f2bg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pij8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b3kxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b0gro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xfmnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rcref")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_t8q4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_53n25")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pij8l"]
+radius = 232.019
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cytsk"]
 bg_color = Color(0, 0.403922, 0.588235, 1)
@@ -186,6 +331,222 @@ shadow_offset = Vector2(-3, 3)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_db1r8"]
 bg_color = Color(5.29438e-07, 0.26458, 0.392931, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.366594, 0.366595, 0.366594, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-4, 4)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u1tvu"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 6.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eit7l"]
+size = Vector2(591, 305)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dijtp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_340i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7dff7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tcp4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7o68m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_f32wr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_xw24x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_s6nh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_oelw3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y1xvm"]
+size = Vector2(145, 146)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eit7l"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 8.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b3kxh"]
+radius = 232.002
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vqrp7"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 6.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_15t0a"]
+size = Vector2(516, 264)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ravdj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_oe23v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_3qas5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_77hq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_uj2fr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_acahs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_x0vss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_snwxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_5k314")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d86lf"]
+size = Vector2(144, 146)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y1xvm"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 8.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b0gro"]
+radius = 232.009
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_31r0k"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 6.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_asowp"]
+size = Vector2(592, 305)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ggp6j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_1xsoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_36eqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_4y60q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ymnmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_bb4wa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_shyix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_5inpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_u1tvu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6n7v"]
+size = Vector2(144, 146)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ravdj"]
+shader = ExtResource("3_41lah")
+shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
+shader_parameter/width = 8.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = false
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xfmnt"]
+radius = 231.054
+
+[sub_resource type="LabelSettings" id="LabelSettings_pij8l"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_b3kxh"]
+font_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjb4g"]
+bg_color = Color(0.72549, 0.352941, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.779291, 0.779291, 0.779291, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dp4b"]
+bg_color = Color(0.57563, 0.274613, 9.62615e-08, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kowp"]
+bg_color = Color(0.723727, 0.35163, 3.85046e-07, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
@@ -244,23 +605,6 @@ font_color = Color(0.76662, 0.76662, 0.76662, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x24wc"]
 size = Vector2(380, 725)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl6y5"]
-content_margin_left = 25.0
-bg_color = Color(0.839216, 0.0235294, 0, 0.686275)
-border_width_left = 10
-border_width_top = 10
-border_width_right = 10
-border_width_bottom = 10
-border_color = Color(0.452658, 0.154437, 0.10936, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_offset = Vector2(-3, 3)
-
-[sub_resource type="LabelSettings" id="LabelSettings_kj7oi"]
-font_size = 30
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fv2u6"]
 shader = ExtResource("3_41lah")
 shader_parameter/color = Color(1, 0.905882, 0.376471, 1)
@@ -298,7 +642,7 @@ animations = [{
 "texture": ExtResource("14_psurm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_psurm")
+"texture": ExtResource("71_xfmnt")
 }],
 "loop": true,
 "name": &"default",
@@ -352,6 +696,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("17_mdi1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_b0gro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_xfmnt")
 }],
 "loop": true,
 "name": &"default",
@@ -360,6 +710,9 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mb6j"]
 size = Vector2(150, 152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pij8l"]
+size = Vector2(126, 197)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jvbil"]
 shader = ExtResource("3_41lah")
@@ -373,18 +726,145 @@ shader_parameter/add_margins = false
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_f1x3h")
+"texture": ExtResource("57_0ijke")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_2q48e")
+"texture": ExtResource("58_yrq44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_7dff7")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("58_yrq44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_0cchb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_340i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_7dff7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_tcp4g")
+}],
+"loop": true,
+"name": &"milk_boil",
+"speed": 0.5
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cbc70"]
-size = Vector2(150, 152)
+size = Vector2(369, 282)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_84pqx"]
+size = Vector2(161, 98)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wg5oo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("63_5inpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_u1tvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_vqrp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_31r0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_88ylt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_se6vf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_nih7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_eit7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_dijtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_y1xvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_15t0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_ravdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_d86lf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_ggp6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_g6n7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_wpji8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_6f2bg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_pij8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_b3kxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_b0gro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_xfmnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_rcref")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_t8q4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_53n25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_yjvo5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 14.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rcref"]
+bg_color = Color(3.73013e-07, 0.256169, 3.36915e-07, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8q4i"]
+bg_color = Color(0, 0.643698, 3.85046e-07, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vl6y5"]
 shader = ExtResource("3_41lah")
@@ -413,6 +893,23 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56ogi"]
 size = Vector2(142, 84)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xfmnt"]
+content_margin_left = 25.0
+bg_color = Color(2.14182e-06, 0.56847, 7.70092e-07, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.0373984, 0.325995, 4.81308e-08, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_offset = Vector2(-3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rcref"]
+font_size = 35
 
 [node name="CookingZoomedIn" type="Node2D"]
 script = ExtResource("1_1510h")
@@ -461,26 +958,375 @@ instance_shader_parameters/enabled = false
 texture = ExtResource("4_1dni5")
 centered = false
 
+[node name="CountertopInteractionHintLabel" type="Label" parent="CountertopBackground"]
+unique_name_in_owner = true
+offset_left = 451.0
+offset_top = 684.0
+offset_right = 975.0
+offset_bottom = 848.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vl6y5")
+text = "HINT:
+Coffee mug already contains coffee-sugar mixture"
+label_settings = SubResource("LabelSettings_kj7oi")
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("12_fkvtd")
+fade_out_duration = 3.0
+
 [node name="StoveBackground" type="Sprite2D" parent="." groups=["stove"]]
 visible = false
 texture = ExtResource("5_41lah")
 centered = false
 
-[node name="ShowInventoryListButton" type="Button" parent="."]
-offset_left = 1487.0
-offset_top = 10.0
-offset_right = 1666.0
-offset_bottom = 95.0
+[node name="BackgroundArea" type="Area2D" parent="StoveBackground"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(960, 91.5)
+shape = SubResource("RectangleShape2D_iptv4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(746.5, 490.5)
+shape = SubResource("RectangleShape2D_4kfse")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(745.5, 881.5)
+shape = SubResource("RectangleShape2D_pvsa8")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(122.25, 331.5)
+shape = SubResource("RectangleShape2D_p3hwe")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(810.5, 330.5)
+shape = SubResource("RectangleShape2D_lhixa")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(809.5, 673.75)
+shape = SubResource("RectangleShape2D_yv8m0")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(72.1875, 675.25)
+shape = SubResource("RectangleShape2D_pkru8")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(1434, 327.375)
+shape = SubResource("RectangleShape2D_2n45o")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(1482.5, 673.188)
+shape = SubResource("RectangleShape2D_k7oru")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(203.5, 1008)
+shape = SubResource("RectangleShape2D_vqrp7")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(1346.5, 1004.5)
+shape = SubResource("RectangleShape2D_31r0k")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StoveBackground/BackgroundArea"]
+position = Vector2(1709, 1013)
+shape = SubResource("RectangleShape2D_88ylt")
+
+[node name="RotatingSprite" type="Sprite2D" parent="StoveBackground"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+position = Vector2(963, 514)
+scale = Vector2(0.0200001, 0.0200001)
+texture = ExtResource("14_pij8l")
+
+[node name="Heater1" type="Sprite2D" parent="StoveBackground"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_5inpn")
+texture = ExtResource("6_4kfse")
+centered = false
+
+[node name="Heater1Area" type="Area2D" parent="StoveBackground/Heater1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater1/Heater1Area"]
+position = Vector2(514, 327.5)
+shape = SubResource("RectangleShape2D_hsuto")
+
+[node name="Knob1" type="AnimatedSprite2D" parent="StoveBackground/Heater1"]
+material = SubResource("ShaderMaterial_88ylt")
+instance_shader_parameters/enabled = false
+sprite_frames = SubResource("SpriteFrames_se6vf")
+centered = false
+
+[node name="Knob1Area" type="Area2D" parent="StoveBackground/Heater1/Knob1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater1/Knob1/Knob1Area"]
+position = Vector2(491, 1009)
+shape = SubResource("RectangleShape2D_nih7h")
+
+[node name="Knob1Outline" type="Sprite2D" parent="StoveBackground/Heater1/Knob1"]
+visible = false
+z_index = 1
+material = SubResource("ShaderMaterial_se6vf")
+texture = ExtResource("15_88ylt")
+centered = false
+
+[node name="Knob1Zoomed" type="AnimatedSprite2D" parent="StoveBackground/Heater1/Knob1"]
+unique_name_in_owner = true
+visible = false
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_veelo")
+centered = false
+
+[node name="Knob1ZoomedArea" type="Area2D" parent="StoveBackground/Heater1/Knob1/Knob1Zoomed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater1/Knob1/Knob1Zoomed/Knob1ZoomedArea"]
+position = Vector2(963, 514)
+shape = SubResource("CircleShape2D_pij8l")
+
+[node name="Knob1Indicator" type="Sprite2D" parent="StoveBackground/Heater1/Knob1/Knob1Zoomed"]
+z_index = 3
+texture = ExtResource("24_yjvo5")
+centered = false
+
+[node name="SetHeatLevelButton" type="Button" parent="StoveBackground/Heater1/Knob1/Knob1Zoomed"]
+z_index = 20
+offset_left = 841.0
+offset_top = 849.0
+offset_right = 1077.0
+offset_bottom = 923.0
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 23
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_8mb6j")
-theme_override_styles/hover = SubResource("StyleBoxFlat_cbc70")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_56ogi")
-theme_override_styles/normal = SubResource("StyleBoxFlat_2q6wo")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cytsk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cu01f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bp10g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_db1r8")
 toggle_mode = true
 action_mode = 0
-text = "SHOW INVENTORY"
+text = "SET HEAT LEVEL"
 autowrap_mode = 2
+
+[node name="Heater2" type="Sprite2D" parent="StoveBackground"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_u1tvu")
+texture = ExtResource("7_pvsa8")
+centered = false
+
+[node name="Heater2Area" type="Area2D" parent="StoveBackground/Heater2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater2/Heater2Area"]
+position = Vector2(452.5, 673.5)
+shape = SubResource("RectangleShape2D_eit7l")
+
+[node name="Knob2" type="AnimatedSprite2D" parent="StoveBackground/Heater2"]
+material = SubResource("ShaderMaterial_88ylt")
+sprite_frames = SubResource("SpriteFrames_dijtp")
+centered = false
+
+[node name="Knob2Area" type="Area2D" parent="StoveBackground/Heater2/Knob2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater2/Knob2/Knob2Area"]
+position = Vector2(699.5, 1009)
+shape = SubResource("RectangleShape2D_y1xvm")
+
+[node name="Knob2Outline" type="Sprite2D" parent="StoveBackground/Heater2/Knob2"]
+visible = false
+z_index = 1
+material = SubResource("ShaderMaterial_eit7l")
+texture = ExtResource("25_se6vf")
+centered = false
+
+[node name="Knob2Zoomed" type="AnimatedSprite2D" parent="StoveBackground/Heater2/Knob2"]
+unique_name_in_owner = true
+visible = false
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_veelo")
+centered = false
+
+[node name="Knob2ZoomedArea" type="Area2D" parent="StoveBackground/Heater2/Knob2/Knob2Zoomed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater2/Knob2/Knob2Zoomed/Knob2ZoomedArea"]
+position = Vector2(963, 514)
+shape = SubResource("CircleShape2D_b3kxh")
+
+[node name="Knob2Indicator" type="Sprite2D" parent="StoveBackground/Heater2/Knob2/Knob2Zoomed"]
+z_index = 3
+texture = ExtResource("35_84pqx")
+centered = false
+
+[node name="SetHeatLevelButton" type="Button" parent="StoveBackground/Heater2/Knob2/Knob2Zoomed"]
+z_index = 20
+offset_left = 841.0
+offset_top = 849.0
+offset_right = 1077.0
+offset_bottom = 923.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cytsk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cu01f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bp10g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_db1r8")
+toggle_mode = true
+action_mode = 0
+text = "SET HEAT LEVEL"
+autowrap_mode = 2
+
+[node name="Heater3" type="Sprite2D" parent="StoveBackground"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_vqrp7")
+texture = ExtResource("8_p3hwe")
+centered = false
+
+[node name="Heater3Area" type="Area2D" parent="StoveBackground/Heater3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater3/Heater3Area"]
+position = Vector2(1107, 327)
+shape = SubResource("RectangleShape2D_15t0a")
+
+[node name="Knob3" type="AnimatedSprite2D" parent="StoveBackground/Heater3"]
+material = SubResource("ShaderMaterial_88ylt")
+sprite_frames = SubResource("SpriteFrames_ravdj")
+centered = false
+
+[node name="Knob3Area" type="Area2D" parent="StoveBackground/Heater3/Knob3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater3/Knob3/Knob3Area"]
+position = Vector2(912, 1009)
+shape = SubResource("RectangleShape2D_d86lf")
+
+[node name="Knob3Outline" type="Sprite2D" parent="StoveBackground/Heater3/Knob3"]
+visible = false
+z_index = 1
+material = SubResource("ShaderMaterial_y1xvm")
+texture = ExtResource("35_nih7h")
+centered = false
+
+[node name="Knob3Zoomed" type="AnimatedSprite2D" parent="StoveBackground/Heater3/Knob3"]
+unique_name_in_owner = true
+visible = false
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_veelo")
+centered = false
+
+[node name="Knob3ZoomedArea" type="Area2D" parent="StoveBackground/Heater3/Knob3/Knob3Zoomed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater3/Knob3/Knob3Zoomed/Knob3ZoomedArea"]
+position = Vector2(963, 514)
+shape = SubResource("CircleShape2D_b0gro")
+
+[node name="Knob3Indicator" type="Sprite2D" parent="StoveBackground/Heater3/Knob3/Knob3Zoomed"]
+z_index = 3
+texture = ExtResource("46_wg5oo")
+centered = false
+
+[node name="SetHeatLevelButton" type="Button" parent="StoveBackground/Heater3/Knob3/Knob3Zoomed"]
+z_index = 20
+offset_left = 841.0
+offset_top = 849.0
+offset_right = 1077.0
+offset_bottom = 923.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cytsk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cu01f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bp10g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_db1r8")
+toggle_mode = true
+action_mode = 0
+text = "SET HEAT LEVEL"
+autowrap_mode = 2
+
+[node name="Heater4" type="Sprite2D" parent="StoveBackground"]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_31r0k")
+texture = ExtResource("9_lhixa")
+centered = false
+
+[node name="Heater4Area" type="Area2D" parent="StoveBackground/Heater4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater4/Heater4Area"]
+position = Vector2(1166, 673.5)
+shape = SubResource("RectangleShape2D_asowp")
+
+[node name="Knob4" type="AnimatedSprite2D" parent="StoveBackground/Heater4"]
+material = SubResource("ShaderMaterial_88ylt")
+sprite_frames = SubResource("SpriteFrames_ggp6j")
+centered = false
+
+[node name="Knob4Area" type="Area2D" parent="StoveBackground/Heater4/Knob4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater4/Knob4/Knob4Area"]
+position = Vector2(1120, 1009)
+shape = SubResource("RectangleShape2D_g6n7v")
+
+[node name="Knob4Outline" type="Sprite2D" parent="StoveBackground/Heater4/Knob4"]
+visible = false
+z_index = 1
+material = SubResource("ShaderMaterial_ravdj")
+texture = ExtResource("45_eit7l")
+centered = false
+
+[node name="Knob4Zoomed" type="AnimatedSprite2D" parent="StoveBackground/Heater4/Knob4"]
+unique_name_in_owner = true
+visible = false
+z_index = 3
+sprite_frames = SubResource("SpriteFrames_veelo")
+centered = false
+
+[node name="Knob4ZoomedArea" type="Area2D" parent="StoveBackground/Heater4/Knob4/Knob4Zoomed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StoveBackground/Heater4/Knob4/Knob4Zoomed/Knob4ZoomedArea"]
+position = Vector2(963, 514)
+shape = SubResource("CircleShape2D_xfmnt")
+
+[node name="Knob4Indicator" type="Sprite2D" parent="StoveBackground/Heater4/Knob4/Knob4Zoomed"]
+z_index = 3
+texture = ExtResource("57_vcdks")
+centered = false
+
+[node name="SetHeatLevelButton" type="Button" parent="StoveBackground/Heater4/Knob4/Knob4Zoomed"]
+z_index = 20
+offset_left = 841.0
+offset_top = 849.0
+offset_right = 1077.0
+offset_bottom = 923.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cytsk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cu01f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bp10g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_db1r8")
+toggle_mode = true
+action_mode = 0
+text = "SET HEAT LEVEL"
+autowrap_mode = 2
+
+[node name="StoveInteractionHintLabel" type="Label" parent="StoveBackground"]
+unique_name_in_owner = true
+z_index = 2
+offset_left = 565.0
+offset_top = 406.0
+offset_right = 1089.0
+offset_bottom = 570.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vl6y5")
+text = "HINT:
+Coffee mug already contains coffee-sugar mixture"
+label_settings = SubResource("LabelSettings_pij8l")
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("12_fkvtd")
+fade_out_duration = 3.0
+
+[node name="KnobInteractionHintLabel" type="Label" parent="StoveBackground"]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 697.0
+offset_top = 25.0
+offset_right = 1221.0
+offset_bottom = 189.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vl6y5")
+text = "HINT:
+Coffee mug already contains coffee-sugar mixture"
+label_settings = SubResource("LabelSettings_b3kxh")
+vertical_alignment = 1
+autowrap_mode = 2
+script = ExtResource("12_fkvtd")
+fade_out_duration = 3.0
 
 [node name="GoToStoveButton" type="Button" parent="." groups=["countertop"]]
 offset_left = 36.0
@@ -499,9 +1345,9 @@ autowrap_mode = 2
 
 [node name="GoToCountertopButton" type="Button" parent="." groups=["stove"]]
 visible = false
-offset_left = 1180.0
+offset_left = 1444.0
 offset_top = 10.0
-offset_right = 1359.0
+offset_right = 1697.0
 offset_bottom = 95.0
 theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 23
@@ -509,8 +1355,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_qjb4g")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1dp4b")
 theme_override_styles/normal = SubResource("StyleBoxFlat_7kowp")
 action_mode = 0
-text = "GO TO STOVE"
+text = "GO TO COUNTERTOP"
 icon = ExtResource("6_v6ntu")
+alignment = 0
 autowrap_mode = 2
 
 [node name="ShowRecipeButton" type="Button" parent="."]
@@ -533,7 +1380,7 @@ autowrap_mode = 2
 unique_name_in_owner = true
 visible = false
 z_index = 2
-position = Vector2(-218, 0)
+position = Vector2(-134, 0)
 scale = Vector2(1.05208, 1.05263)
 texture = ExtResource("8_1dni5")
 centered = false
@@ -557,8 +1404,8 @@ rotation = 0.0238694
 text = "INGREDIENTS:
 1. Instant coffee powder (1tbsp)
 2. Sugar (1tbsp)
-3. Water (1/2tbsp) 
-4. Milk (1cup or 1/2 bottle)"
+3. Milk (1cup or 1/2 bottle)
+4. A handful of care and love"
 label_settings = SubResource("LabelSettings_j8a0j")
 autowrap_mode = 2
 
@@ -579,21 +1426,23 @@ text = "UTENSILS REQUIRED:
 label_settings = SubResource("LabelSettings_f1x3h")
 
 [node name="ProcedureLabel" type="Label" parent="RecipeBookSprite"]
-offset_left = 918.178
-offset_top = 342.95
-offset_right = 1232.18
-offset_bottom = 835.95
+offset_left = 916.28
+offset_top = 304.95
+offset_right = 1240.28
+offset_bottom = 890.95
 rotation = -0.00601494
 text = "PROCEDURE:
-1. Measure using Tablespoon:
-- 1tbsp Instant coffee powder, 
-- 1tbsp Sugar and 
-- 1/2tbsp Water 
+1. Pour 1/2 bottle of milk into a Boiling pot.
+2. Place the Boiling pot on the stove.
+3. Turn on the stove in medium heat for 2.5min, till the milk boils.
+4. While the milk boils, 
+measure using Tablespoon:
+- 1tbsp Instant coffee powder
+- 1tbsp Sugar
 and put them into a Coffee mug.
-2. Mix thoroughly using Tablespoon.
-3. Pour 1/2 bottle of milk into a Boiling pot.
-4. Heat the Boiling pot on the stove for 2.5min, till the Milk boils.
-5. Pour the Milk into the Coffee mug carefully and mix thoroughly."
+5. After milk boils, turn off the stove.
+6. Pour the Milk into the Coffee mug carefully.
+7. Mix thoroughly using Tablespoon."
 label_settings = SubResource("LabelSettings_fkvtd")
 autowrap_mode = 2
 
@@ -647,24 +1496,6 @@ z_index = 1
 position = Vector2(209, 373.5)
 shape = SubResource("RectangleShape2D_x24wc")
 
-[node name="InteractionHintLabel" type="Label" parent="."]
-unique_name_in_owner = true
-offset_left = 432.0
-offset_top = 659.0
-offset_right = 956.0
-offset_bottom = 823.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_vl6y5")
-text = "HINT:
-Coffee mug already contains coffee-sugar mixture"
-label_settings = SubResource("LabelSettings_kj7oi")
-vertical_alignment = 1
-autowrap_mode = 2
-script = ExtResource("12_fkvtd")
-fade_out_duration = 3.0
-
-[node name="HintVisibleTimer" type="Timer" parent="InteractionHintLabel"]
-one_shot = true
-
 [node name="SugarBottle" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -711,6 +1542,12 @@ sprite_frames = SubResource("SpriteFrames_kj7oi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeeMug/CoffeeMugArea"]
 shape = SubResource("RectangleShape2D_8mb6j")
 
+[node name="PouringArea" type="Area2D" parent="CoffeeMug"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeeMug/PouringArea"]
+position = Vector2(0, -176.5)
+shape = SubResource("RectangleShape2D_pij8l")
+
 [node name="BoilingPot" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -720,7 +1557,33 @@ sprite_frames = SubResource("SpriteFrames_maqfh")
 [node name="BoilingPotArea" type="Area2D" parent="BoilingPot"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoilingPot/BoilingPotArea"]
+position = Vector2(-45.5, 49)
 shape = SubResource("RectangleShape2D_cbc70")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="BoilingPot/BoilingPotArea"]
+position = Vector2(149.5, -141)
+shape = SubResource("RectangleShape2D_84pqx")
+
+[node name="Vapours" type="AnimatedSprite2D" parent="BoilingPot"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_wg5oo")
+frame_progress = 0.340508
+
+[node name="HeatingProgressBar" type="ProgressBar" parent="BoilingPot"]
+visible = false
+offset_left = -291.0
+offset_top = 154.0
+offset_right = -74.0
+offset_bottom = 193.0
+rotation = -1.5708
+theme_override_styles/background = SubResource("StyleBoxFlat_rcref")
+theme_override_styles/fill = SubResource("StyleBoxFlat_t8q4i")
+value = 46.2
+show_percentage = false
+
+[node name="HeatingTimer" type="Timer" parent="BoilingPot/HeatingProgressBar"]
+wait_time = 10.0
+one_shot = true
 
 [node name="Tablespoon" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
@@ -734,11 +1597,60 @@ sprite_frames = SubResource("SpriteFrames_fv2u6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tablespoon/TablespoonArea"]
 shape = SubResource("RectangleShape2D_56ogi")
 
+[node name="GameEndLabel" type="Label" parent="."]
+visible = false
+offset_left = 373.0
+offset_top = 216.0
+offset_right = 1045.0
+offset_bottom = 643.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xfmnt")
+text = "You had your delicious coffee and had an amazing day afterwards!
+
+CONGRATULATIONS! YOU HAVE COMPLETED THE TUTORIAL. 
+
+NEW LEVELS HAVE BEEN UNLOCKED"
+label_settings = SubResource("LabelSettings_rcref")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [connection signal="input_event" from="CountertopBackground/BackgroundArea" to="." method="_on_background_area_input_event"]
 [connection signal="input_event" from="CountertopBackground/WorkingArea" to="." method="_on_working_area_input_event"]
 [connection signal="mouse_entered" from="CountertopBackground/WorkingArea" to="." method="_on_working_area_mouse_entered"]
 [connection signal="mouse_exited" from="CountertopBackground/WorkingArea" to="." method="_on_working_area_mouse_exited"]
-[connection signal="toggled" from="ShowInventoryListButton" to="." method="_on_show_inventory_list_button_toggled"]
+[connection signal="input_event" from="StoveBackground/BackgroundArea" to="." method="_on_background_area_input_event"]
+[connection signal="input_event" from="StoveBackground/Heater1/Heater1Area" to="." method="_on_heater_area_input_event" binds= [0]]
+[connection signal="mouse_entered" from="StoveBackground/Heater1/Heater1Area" to="." method="_on_heater_area_mouse_entered" binds= [0]]
+[connection signal="mouse_exited" from="StoveBackground/Heater1/Heater1Area" to="." method="_on_heater_area_mouse_exited" binds= [0]]
+[connection signal="input_event" from="StoveBackground/Heater1/Knob1/Knob1Area" to="." method="_on_knob_area_input_event" binds= [0]]
+[connection signal="mouse_entered" from="StoveBackground/Heater1/Knob1/Knob1Area" to="." method="_on_knob_area_mouse_entered" binds= [0]]
+[connection signal="mouse_exited" from="StoveBackground/Heater1/Knob1/Knob1Area" to="." method="_on_knob_area_mouse_exited" binds= [0]]
+[connection signal="input_event" from="StoveBackground/Heater1/Knob1/Knob1Zoomed/Knob1ZoomedArea" to="." method="_on_knob_zoomed_area_input_event"]
+[connection signal="pressed" from="StoveBackground/Heater1/Knob1/Knob1Zoomed/SetHeatLevelButton" to="." method="_on_set_heat_level_button_pressed"]
+[connection signal="input_event" from="StoveBackground/Heater2/Heater2Area" to="." method="_on_heater_area_input_event" binds= [1]]
+[connection signal="mouse_entered" from="StoveBackground/Heater2/Heater2Area" to="." method="_on_heater_area_mouse_entered" binds= [1]]
+[connection signal="mouse_exited" from="StoveBackground/Heater2/Heater2Area" to="." method="_on_heater_area_mouse_exited" binds= [1]]
+[connection signal="input_event" from="StoveBackground/Heater2/Knob2/Knob2Area" to="." method="_on_knob_area_input_event" binds= [1]]
+[connection signal="mouse_entered" from="StoveBackground/Heater2/Knob2/Knob2Area" to="." method="_on_knob_area_mouse_entered" binds= [1]]
+[connection signal="mouse_exited" from="StoveBackground/Heater2/Knob2/Knob2Area" to="." method="_on_knob_area_mouse_exited" binds= [1]]
+[connection signal="input_event" from="StoveBackground/Heater2/Knob2/Knob2Zoomed/Knob2ZoomedArea" to="." method="_on_knob_zoomed_area_input_event"]
+[connection signal="pressed" from="StoveBackground/Heater2/Knob2/Knob2Zoomed/SetHeatLevelButton" to="." method="_on_set_heat_level_button_pressed"]
+[connection signal="input_event" from="StoveBackground/Heater3/Heater3Area" to="." method="_on_heater_area_input_event" binds= [2]]
+[connection signal="mouse_entered" from="StoveBackground/Heater3/Heater3Area" to="." method="_on_heater_area_mouse_entered" binds= [2]]
+[connection signal="mouse_exited" from="StoveBackground/Heater3/Heater3Area" to="." method="_on_heater_area_mouse_exited" binds= [2]]
+[connection signal="input_event" from="StoveBackground/Heater3/Knob3/Knob3Area" to="." method="_on_knob_area_input_event" binds= [2]]
+[connection signal="mouse_entered" from="StoveBackground/Heater3/Knob3/Knob3Area" to="." method="_on_knob_area_mouse_entered" binds= [2]]
+[connection signal="mouse_exited" from="StoveBackground/Heater3/Knob3/Knob3Area" to="." method="_on_knob_area_mouse_exited" binds= [2]]
+[connection signal="input_event" from="StoveBackground/Heater3/Knob3/Knob3Zoomed/Knob3ZoomedArea" to="." method="_on_knob_zoomed_area_input_event"]
+[connection signal="pressed" from="StoveBackground/Heater3/Knob3/Knob3Zoomed/SetHeatLevelButton" to="." method="_on_set_heat_level_button_pressed"]
+[connection signal="input_event" from="StoveBackground/Heater4/Heater4Area" to="." method="_on_heater_area_input_event" binds= [3]]
+[connection signal="mouse_entered" from="StoveBackground/Heater4/Heater4Area" to="." method="_on_heater_area_mouse_entered" binds= [3]]
+[connection signal="mouse_exited" from="StoveBackground/Heater4/Heater4Area" to="." method="_on_heater_area_mouse_exited" binds= [3]]
+[connection signal="input_event" from="StoveBackground/Heater4/Knob4/Knob4Area" to="." method="_on_knob_area_input_event" binds= [3]]
+[connection signal="mouse_entered" from="StoveBackground/Heater4/Knob4/Knob4Area" to="." method="_on_knob_area_mouse_entered" binds= [3]]
+[connection signal="mouse_exited" from="StoveBackground/Heater4/Knob4/Knob4Area" to="." method="_on_knob_area_mouse_exited" binds= [3]]
+[connection signal="input_event" from="StoveBackground/Heater4/Knob4/Knob4Zoomed/Knob4ZoomedArea" to="." method="_on_knob_zoomed_area_input_event"]
+[connection signal="pressed" from="StoveBackground/Heater4/Knob4/Knob4Zoomed/SetHeatLevelButton" to="." method="_on_set_heat_level_button_pressed"]
 [connection signal="pressed" from="GoToStoveButton" to="." method="_on_go_to_stove_button_pressed"]
 [connection signal="pressed" from="GoToCountertopButton" to="." method="_on_go_to_countertop_button_pressed"]
 [connection signal="toggled" from="ShowRecipeButton" to="." method="_on_show_recipe_button_toggled"]
@@ -757,9 +1669,13 @@ shape = SubResource("RectangleShape2D_56ogi")
 [connection signal="input_event" from="CoffeeMug/CoffeeMugArea" to="." method="_on_placed_item_area_input_event" binds= ["Coffee mug"]]
 [connection signal="mouse_entered" from="CoffeeMug/CoffeeMugArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Coffee mug"]]
 [connection signal="mouse_exited" from="CoffeeMug/CoffeeMugArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Coffee mug"]]
+[connection signal="input_event" from="CoffeeMug/PouringArea" to="." method="_on_pouring_area_input_event"]
+[connection signal="mouse_entered" from="CoffeeMug/PouringArea" to="." method="_on_pouring_area_mouse_entered"]
+[connection signal="mouse_exited" from="CoffeeMug/PouringArea" to="." method="_on_pouring_area_mouse_exited"]
 [connection signal="input_event" from="BoilingPot/BoilingPotArea" to="." method="_on_placed_item_area_input_event" binds= ["Boiling pot"]]
 [connection signal="mouse_entered" from="BoilingPot/BoilingPotArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Boiling pot"]]
 [connection signal="mouse_exited" from="BoilingPot/BoilingPotArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Boiling pot"]]
+[connection signal="timeout" from="BoilingPot/HeatingProgressBar/HeatingTimer" to="." method="_on_heating_timer_timeout"]
 [connection signal="input_event" from="Tablespoon/TablespoonArea" to="." method="_on_placed_item_area_input_event" binds= ["Tablespoon"]]
 [connection signal="mouse_entered" from="Tablespoon/TablespoonArea" to="." method="_on_placed_item_area_mouse_entered" binds= ["Tablespoon"]]
 [connection signal="mouse_exited" from="Tablespoon/TablespoonArea" to="." method="_on_placed_item_area_mouse_exited" binds= ["Tablespoon"]]
