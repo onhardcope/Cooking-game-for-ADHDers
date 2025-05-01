@@ -1,4 +1,4 @@
-[gd_scene load_steps=201 format=3 uid="uid://wxhnd6tmnviy"]
+[gd_scene load_steps=203 format=3 uid="uid://wxhnd6tmnviy"]
 
 [ext_resource type="Script" uid="uid://dmb20aemqvk3u" path="res://CookingZoomedIn/cooking_zoomed_in.gd" id="1_1510h"]
 [ext_resource type="Texture2D" uid="uid://crovi2x84dqla" path="res://Assets/CookingZoomedIn/Extras/countertop scene/countertop_scene.png" id="2_v6ntu"]
@@ -20,14 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://dfbteucf11lv3" path="res://Assets/CookingZoomedIn/Inventory list textures/sugar_bottle.png" id="8_db1r8"]
 [ext_resource type="Texture2D" uid="uid://dlybfpc0yblmd" path="res://Assets/CookingZoomedIn/Extras/stove scene/heating elements/top_right_heater.png" id="8_p3hwe"]
 [ext_resource type="Texture2D" uid="uid://dxv1ewl4rtk6h" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_2.png" id="9_53wen"]
-[ext_resource type="Texture2D" uid="uid://rej7grvmkq61" path="res://Assets/Kitchen/Utensils and Others/coffee_mug.png" id="9_87wv6"]
 [ext_resource type="Texture2D" uid="uid://dbb45xfx6l7y4" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_3.png" id="9_b0gro"]
 [ext_resource type="Texture2D" uid="uid://bne1h62hq5en4" path="res://Assets/CookingZoomedIn/Extras/stove scene/heating elements/bottom_right_heater.png" id="9_lhixa"]
 [ext_resource type="Texture2D" uid="uid://kefsn54jtlsa" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_3.png" id="10_643bg"]
-[ext_resource type="Texture2D" uid="uid://cu2e612ajvo3s" path="res://Assets/Kitchen/Utensils and Others/tablespoon.png" id="10_j8a0j"]
 [ext_resource type="Texture2D" uid="uid://rm8o22726rts" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_4.png" id="10_xfmnt"]
 [ext_resource type="Texture2D" uid="uid://foe3mcijgjqn" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_4.png" id="11_c224f"]
-[ext_resource type="Texture2D" uid="uid://yfy3l8fm0111" path="res://Assets/Kitchen/Utensils and Others/boiling_pot.png" id="11_f1x3h"]
 [ext_resource type="Texture2D" uid="uid://b4vp76s85yc7i" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (zoomed)/general knob frames/zoomed_knob_5.png" id="11_rcref"]
 [ext_resource type="Texture2D" uid="uid://7vlcm2fvdi25" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_5.png" id="12_0ijke"]
 [ext_resource type="Script" uid="uid://b6b4qee24nmoo" path="res://CookingZoomedIn/interaction_error_label.gd" id="12_fkvtd"]
@@ -40,10 +37,8 @@
 [ext_resource type="Texture2D" uid="uid://curvdvo4kmag" path="res://Assets/CookingZoomedIn/Ingredients/milk_bottle.png" id="14_psurm"]
 [ext_resource type="Texture2D" uid="uid://dtys7fjvbqy6n" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 1/knob_1_outline.png" id="15_88ylt"]
 [ext_resource type="Texture2D" uid="uid://cumy6urptuhlc" path="res://Assets/CookingZoomedIn/Ingredients/coffee_bottle.png" id="15_qw8ry"]
-[ext_resource type="Texture2D" uid="uid://rsd54tvjboqe" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_1.png" id="16_7kmne"]
 [ext_resource type="Texture2D" uid="uid://8t6nprfp0flk" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_0.png" id="16_340i5"]
 [ext_resource type="Texture2D" uid="uid://swxend7acd1i" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_1.png" id="17_7dff7"]
-[ext_resource type="Texture2D" uid="uid://qyybojp87d8q" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_2.png" id="17_mdi1p"]
 [ext_resource type="Texture2D" uid="uid://bttw43r8fb8th" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_2.png" id="18_tcp4g"]
 [ext_resource type="Texture2D" uid="uid://ddo2uf242w17u" path="res://Assets/CookingZoomedIn/Extras/stove scene/control knobs (NOT zoomed)/knob 2/knob_2_3.png" id="19_7o68m"]
 [ext_resource type="Texture2D" uid="uid://dwxqr1ybo2nkw" path="res://Assets/CookingZoomedIn/Utensils/table_spoon_0.png" id="19_k7rwt"]
@@ -86,7 +81,10 @@
 [ext_resource type="Texture2D" uid="uid://ymcxl5cffuge" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_1.png" id="64_u1tvu"]
 [ext_resource type="Texture2D" uid="uid://f3vafc70xyir" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_2.png" id="65_vqrp7"]
 [ext_resource type="Texture2D" uid="uid://dis556vpoyda1" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_3.png" id="66_31r0k"]
+[ext_resource type="Texture2D" uid="uid://bf0stac2aam2r" path="res://Assets/CookingZoomedIn/Inventory list textures/coffee_mug.png" id="66_t8q4i"]
 [ext_resource type="Texture2D" uid="uid://cyxa3nirmdckx" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_4.png" id="67_88ylt"]
+[ext_resource type="Texture2D" uid="uid://b7oegyfmyrmwm" path="res://Assets/CookingZoomedIn/Inventory list textures/table_spoon.png" id="67_t8q4i"]
+[ext_resource type="Texture2D" uid="uid://74abwlt8gbnc" path="res://Assets/CookingZoomedIn/Inventory list textures/boiling_pot.png" id="68_53n25"]
 [ext_resource type="Texture2D" uid="uid://bbqmn7y5ncos2" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_5.png" id="68_se6vf"]
 [ext_resource type="Texture2D" uid="uid://ciuukko4r3286" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_6.png" id="69_nih7h"]
 [ext_resource type="Texture2D" uid="uid://dtoj80lnm7cr7" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_7.png" id="70_eit7l"]
@@ -94,12 +92,16 @@
 [ext_resource type="Texture2D" uid="uid://qpjxi6aayooq" path="res://Assets/CookingZoomedIn/Ingredients/milk_bottle_1.png" id="71_xfmnt"]
 [ext_resource type="Texture2D" uid="uid://dom3qxb7bc0ti" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_9.png" id="72_y1xvm"]
 [ext_resource type="Texture2D" uid="uid://60v2jiynyf7l" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_10.png" id="73_15t0a"]
-[ext_resource type="Texture2D" uid="uid://b17migpgab5m4" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_4.png" id="74_b0gro"]
+[ext_resource type="Texture2D" uid="uid://dke3onhrb2mxl" path="res://Assets/CookingZoomedIn/Utensils/Coffee mug/coffee_mug_0.png" id="73_t8q4i"]
+[ext_resource type="Texture2D" uid="uid://bu1d3wfkxjgtr" path="res://Assets/CookingZoomedIn/Utensils/Coffee mug/coffee_mug_1.png" id="74_53n25"]
 [ext_resource type="Texture2D" uid="uid://due88hs4fqgn5" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_11.png" id="74_ravdj"]
 [ext_resource type="Texture2D" uid="uid://57xavoj4luej" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_12.png" id="75_d86lf"]
-[ext_resource type="Texture2D" uid="uid://dje1kxtnpml0t" path="res://Assets/CookingZoomedIn/Utensils/coffee_mug_5.png" id="75_xfmnt"]
+[ext_resource type="Texture2D" uid="uid://bfqalvjh1edyu" path="res://Assets/CookingZoomedIn/Utensils/Coffee mug/coffee_mug_2.png" id="75_yjvo5"]
+[ext_resource type="Texture2D" uid="uid://c0xfu6gtg0xeu" path="res://Assets/CookingZoomedIn/Utensils/Coffee mug/coffee_mug_3.png" id="76_84pqx"]
 [ext_resource type="Texture2D" uid="uid://sa4mwir0kg38" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_13.png" id="76_ggp6j"]
 [ext_resource type="Texture2D" uid="uid://ctsm27b4rnico" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_14.png" id="77_g6n7v"]
+[ext_resource type="Texture2D" uid="uid://c3vcc33w1imoi" path="res://Assets/CookingZoomedIn/Utensils/Coffee mug/coffee_mug_4.png" id="77_wg5oo"]
+[ext_resource type="Texture2D" uid="uid://gjn53nxp5khg" path="res://Assets/CookingZoomedIn/Utensils/Coffee mug/coffee_mug_5.png" id="78_vcdks"]
 [ext_resource type="Texture2D" uid="uid://dmgvyjxltqrqi" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_15.png" id="78_wpji8"]
 [ext_resource type="Texture2D" uid="uid://ctcg5w57tcr6q" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_16.png" id="79_6f2bg"]
 [ext_resource type="Texture2D" uid="uid://dxpa8vr8h4juf" path="res://Assets/CookingZoomedIn/Utensils/Boiling pot/Vapour animation frames/vapour_17.png" id="80_pij8l"]
@@ -686,22 +688,22 @@ shader_parameter/add_margins = false
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_87wv6")
+"texture": ExtResource("73_t8q4i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_7kmne")
+"texture": ExtResource("74_53n25")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_mdi1p")
+"texture": ExtResource("75_yjvo5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_mdi1p")
+"texture": ExtResource("76_84pqx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_b0gro")
+"texture": ExtResource("77_wg5oo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_xfmnt")
+"texture": ExtResource("78_vcdks")
 }],
 "loop": true,
 "name": &"default",
@@ -709,10 +711,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mb6j"]
-size = Vector2(150, 152)
+size = Vector2(179, 128)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pij8l"]
-size = Vector2(126, 197)
+size = Vector2(126, 174.75)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jvbil"]
 shader = ExtResource("3_41lah")
@@ -971,7 +973,7 @@ label_settings = SubResource("LabelSettings_kj7oi")
 vertical_alignment = 1
 autowrap_mode = 2
 script = ExtResource("12_fkvtd")
-fade_out_duration = 3.0
+fade_out_duration = 4.5
 
 [node name="StoveBackground" type="Sprite2D" parent="." groups=["stove"]]
 visible = false
@@ -1310,7 +1312,7 @@ label_settings = SubResource("LabelSettings_pij8l")
 vertical_alignment = 1
 autowrap_mode = 2
 script = ExtResource("12_fkvtd")
-fade_out_duration = 3.0
+fade_out_duration = 4.5
 
 [node name="KnobInteractionHintLabel" type="Label" parent="StoveBackground"]
 unique_name_in_owner = true
@@ -1326,7 +1328,7 @@ label_settings = SubResource("LabelSettings_b3kxh")
 vertical_alignment = 1
 autowrap_mode = 2
 script = ExtResource("12_fkvtd")
-fade_out_duration = 3.0
+fade_out_duration = 4.5
 
 [node name="GoToStoveButton" type="Button" parent="." groups=["countertop"]]
 offset_left = 36.0
@@ -1470,11 +1472,11 @@ item_1/icon = ExtResource("7_bp10g")
 item_2/text = "Sugar"
 item_2/icon = ExtResource("8_db1r8")
 item_3/text = "Coffee mug"
-item_3/icon = ExtResource("9_87wv6")
+item_3/icon = ExtResource("66_t8q4i")
 item_4/text = "Tablespoon"
-item_4/icon = ExtResource("10_j8a0j")
+item_4/icon = ExtResource("67_t8q4i")
 item_5/text = "Boiling pot"
-item_5/icon = ExtResource("11_f1x3h")
+item_5/icon = ExtResource("68_53n25")
 
 [node name="Header" type="Label" parent="InventoryList"]
 layout_mode = 1
@@ -1540,12 +1542,13 @@ sprite_frames = SubResource("SpriteFrames_kj7oi")
 [node name="CoffeeMugArea" type="Area2D" parent="CoffeeMug"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeeMug/CoffeeMugArea"]
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_8mb6j")
 
 [node name="PouringArea" type="Area2D" parent="CoffeeMug"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CoffeeMug/PouringArea"]
-position = Vector2(0, -176.5)
+position = Vector2(-15, -152)
 shape = SubResource("RectangleShape2D_pij8l")
 
 [node name="BoilingPot" type="AnimatedSprite2D" parent="."]
@@ -1582,7 +1585,7 @@ value = 46.2
 show_percentage = false
 
 [node name="HeatingTimer" type="Timer" parent="BoilingPot/HeatingProgressBar"]
-wait_time = 10.0
+wait_time = 7.5
 one_shot = true
 
 [node name="Tablespoon" type="AnimatedSprite2D" parent="."]

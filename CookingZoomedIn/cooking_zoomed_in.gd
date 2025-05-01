@@ -134,8 +134,6 @@ func _on_working_area_mouse_exited() -> void:
 	highlight_area_rect.set_instance_shader_parameter("enabled", false)
 
 func get_interaction_result(placed_item_name: String) -> Array:
-	
-	
 	var selected_item_sprite: AnimatedSprite2D = item_dict[selected_item_name]
 	var placed_item_sprite: AnimatedSprite2D = item_dict[placed_item_name]
 	
@@ -172,9 +170,9 @@ func show_interaction_error_hint(error_code: int, interaction_type: String) -> v
 			-4:
 				hint_text += "Coffee mug already contains needed coffee powder."
 			-5:
-				hint_text += "Coffee mug already contains needed sugar and coffee powder"
+				hint_text += "Coffee mug already contains needed sugar and coffee powder."
 			-6:
-				hint_text += "Boiling pot already contains needed milk"
+				hint_text += "Boiling pot already contains needed milk."
 				
 		countertop_interaction_hint_label.text = hint_text
 		countertop_interaction_hint_label.fade_out()
@@ -208,7 +206,7 @@ func _on_placed_item_area_input_event(viewport: Node, event: InputEvent, shape_i
 			$GoToCountertopButton.mouse_filter = Control.MOUSE_FILTER_STOP
 			
 			await get_tree().create_timer(5).timeout
-			get_tree().change_scene_to_file("res://CreateSave/create_save.tscn")
+			get_tree().quit()
 		
 		elif (not selected_item_name):
 			var selected_item_sprite: AnimatedSprite2D = item_dict[placed_item_name]
@@ -488,7 +486,7 @@ func _on_set_heat_level_button_pressed() -> void:
 func start_heating() -> void:
 	var boiling_pot_area: Area2D = boiling_pot_sprite.get_child(0)
 	boiling_pot_area.input_pickable = false
-	boiling_pot_sprite.play("milk_boil", 1.0)
+	boiling_pot_sprite.play("milk_boil", 1.33)
 	heating_progress_bar.max_value = heating_timer.wait_time
 	heating_timer.start()
 	heating_progress_bar.visible = true
